@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -64,5 +65,10 @@ public class WpmobilePackActions {
 		 exact=homeitemsMethod(item);
 		 element=wpMobilePackPO.homeGrid.findElement(By.xpath("//div["+(exact)+"]/div[2]/a"));
 		 element.click();
+	}
+	public void scroll(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
+		
 	}
 }

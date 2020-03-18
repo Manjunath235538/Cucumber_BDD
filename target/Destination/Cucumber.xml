@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="49.803895">
-<testcase classname="showcasing BDD framework using Toolsqa site" name="To access cucumber tutorial" time="18.219523">
-<system-out><![CDATA[Given i aunthorized user able to access toolsqa site........................passed
-When im at home page and navigate to tutorials menu.........................passed
-Then navigate to "Web Automation Tools" menu followed by "Cucumber Tutorial".passed
-]]></system-out>
-</testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack" time="14.310638">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="71.599355">
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack" time="35.424624">
 <system-out><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
 When i select product "Patient Ninja" from home.............................passed
 And add the selected product to cart "Patient Ninja was added to your shopping cart".passed
@@ -14,7 +8,7 @@ Then go to checkout page , fill the required fields and place the order.....pass
 Then order has been successfully placed "Order received"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes" time="9.016769">
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes" time="17.414597">
 <system-out><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
 When i select product "Happy Ninja" from home...............................passed
 And add the selected product to cart "Happy Ninja was added to your shopping cart".passed
@@ -22,7 +16,7 @@ Then go to checkout page , fill the required fields and place the order.....pass
 Then order has been successfully placed "Order received"....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes 2" time="8.256965">
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes 2" time="18.760134">
 <system-out><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
 When i select product "Premium Quality" from home...........................passed
 And add the selected product to cart "Premium Quality was added to your shopping cart".passed

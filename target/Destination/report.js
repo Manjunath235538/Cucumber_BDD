@@ -1,86 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("toolsqa.feature");
-formatter.feature({
-  "line": 2,
-  "name": "showcasing BDD framework using Toolsqa site",
-  "description": "",
-  "id": "showcasing-bdd-framework-using-toolsqa-site",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@SampleFeature_Toolsqa"
-    }
-  ]
-});
-formatter.before({
-  "duration": 10437689700,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1785800,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 5,
-  "name": "To access cucumber tutorial",
-  "description": "",
-  "id": "showcasing-bdd-framework-using-toolsqa-site;to-access-cucumber-tutorial",
-  "type": "scenario",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "line": 4,
-      "name": "@Access_Cucumber_tutorial"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "i aunthorized user able to access toolsqa site",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "im at home page and navigate to tutorials menu",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "navigate to \"Web Automation Tools\" menu followed by \"Cucumber Tutorial\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "ToolsqaStepDefinition.i_aunthorized_user_able_to_access_toolsqa_site()"
-});
-formatter.result({
-  "duration": 4023400700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "ToolsqaStepDefinition.im_at_home_page_and_navigate_to_tutorials_menu()"
-});
-formatter.result({
-  "duration": 628186500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Web Automation Tools",
-      "offset": 13
-    },
-    {
-      "val": "Cucumber Tutorial",
-      "offset": 53
-    }
-  ],
-  "location": "ToolsqaStepDefinition.navigate_to_menu_followed_by(String,String)"
-});
-formatter.result({
-  "duration": 3128460100,
-  "status": "passed"
-});
-formatter.uri("wpmobile.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("wpmobile.feature");
 formatter.feature({
   "line": 2,
   "name": "showcasing BDD framework using wpmobile ecommerce site",
@@ -95,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 1848000,
+  "duration": 10210410000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1855000,
+  "duration": 2755500,
   "status": "passed"
 });
 formatter.scenario({
@@ -163,7 +81,7 @@ formatter.step({
         "street 2",
         "ohio",
         "Missouri",
-        "560056",
+        "43210",
         "987654321",
         "mail@gmail.com"
       ],
@@ -181,7 +99,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()"
 });
 formatter.result({
-  "duration": 4783639100,
+  "duration": 5333763300,
   "status": "passed"
 });
 formatter.match({
@@ -194,7 +112,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_select_product_from_home(String)"
 });
 formatter.result({
-  "duration": 1953608300,
+  "duration": 2569954600,
   "status": "passed"
 });
 formatter.match({
@@ -207,14 +125,14 @@ formatter.match({
   "location": "DemoStepDefinition.add_the_selected_product_to_cart(String)"
 });
 formatter.result({
-  "duration": 5156692600,
+  "duration": 6427637200,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData\u003e)"
 });
 formatter.result({
-  "duration": 1936967700,
+  "duration": 4439694200,
   "status": "passed"
 });
 formatter.match({
@@ -227,7 +145,7 @@ formatter.match({
   "location": "DemoStepDefinition.order_has_been_successfully_placed(String)"
 });
 formatter.result({
-  "duration": 476026800,
+  "duration": 6440409000,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -291,7 +209,7 @@ formatter.step({
         "street 2",
         "ohio",
         "Missouri",
-        "560056",
+        "43210",
         "987654321",
         "mail@gmail.com"
       ],
@@ -339,11 +257,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1955500,
+  "duration": 1440300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3024300,
+  "duration": 2283200,
   "status": "passed"
 });
 formatter.scenario({
@@ -417,7 +335,7 @@ formatter.step({
         "street 2",
         "ohio",
         "Missouri",
-        "560056",
+        "43210",
         "987654321",
         "mail@gmail.com"
       ],
@@ -435,7 +353,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()"
 });
 formatter.result({
-  "duration": 717247200,
+  "duration": 708554700,
   "status": "passed"
 });
 formatter.match({
@@ -448,7 +366,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_select_product_from_home(String)"
 });
 formatter.result({
-  "duration": 602511700,
+  "duration": 1606306400,
   "status": "passed"
 });
 formatter.match({
@@ -461,14 +379,14 @@ formatter.match({
   "location": "DemoStepDefinition.add_the_selected_product_to_cart(String)"
 });
 formatter.result({
-  "duration": 5355469000,
+  "duration": 4002061500,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData\u003e)"
 });
 formatter.result({
-  "duration": 1813849500,
+  "duration": 4536311500,
   "status": "passed"
 });
 formatter.match({
@@ -481,15 +399,15 @@ formatter.match({
   "location": "DemoStepDefinition.order_has_been_successfully_placed(String)"
 });
 formatter.result({
-  "duration": 522712000,
+  "duration": 6557639300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2475500,
+  "duration": 1673000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1362400,
+  "duration": 1455000,
   "status": "passed"
 });
 formatter.scenario({
@@ -563,7 +481,7 @@ formatter.step({
         "street 2",
         "ohio",
         "Missouri",
-        "560056",
+        "43210",
         "987654321",
         "mail@gmail.com"
       ],
@@ -581,7 +499,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()"
 });
 formatter.result({
-  "duration": 726411700,
+  "duration": 732222700,
   "status": "passed"
 });
 formatter.match({
@@ -594,7 +512,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_select_product_from_home(String)"
 });
 formatter.result({
-  "duration": 654261900,
+  "duration": 1679837500,
   "status": "passed"
 });
 formatter.match({
@@ -607,14 +525,14 @@ formatter.match({
   "location": "DemoStepDefinition.add_the_selected_product_to_cart(String)"
 });
 formatter.result({
-  "duration": 4551396100,
+  "duration": 5022543100,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData\u003e)"
 });
 formatter.result({
-  "duration": 1820988400,
+  "duration": 4672848100,
   "status": "passed"
 });
 formatter.match({
@@ -627,7 +545,7 @@ formatter.match({
   "location": "DemoStepDefinition.order_has_been_successfully_placed(String)"
 });
 formatter.result({
-  "duration": 500069300,
+  "duration": 6649554600,
   "status": "passed"
 });
 });

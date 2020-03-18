@@ -18,7 +18,7 @@ public class WpmobilePackPageObjects {
 	@FindBy(how=How.XPATH, using="//div[@class='top-center']/span/div/div/div[2]/div[2]")
 	public  WebElement notificationMsg;
 	
-	@FindBy(how=How.XPATH, using="//header[@class='entry-header']")
+	@FindBy(how=How.XPATH, using="//header[@class='entry-header']/h1")
 	public  WebElement orderReceived;
 	
 	@FindBy(how=How.XPATH,using="//*[@id='root']/div/div/div[2]/div[2]/div[2]/button")
@@ -68,6 +68,6 @@ public class WpmobilePackPageObjects {
 	@FindBy(how=How.ID,using="billing_email")
 	public  WebElement email;
 	
-	@FindBy(how=How.ID,using="place_order")
+	@FindBy(how=How.XPATH,using="//*[@id='place_order']")
 	public  WebElement orderBtn;
 }

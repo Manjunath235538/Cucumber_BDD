@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="6.096763">
+<testcase classname="Employee details" name="Add Employee record" time="3.186316">
+<system-out><![CDATA[Given I Set POST employee service api endpoint..............................passed
+When I Set request HEADER and body..........................................passed
+And Send a POST HTTP request................................................passed
+Then I receive valid HTTP Response code as 200..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Employee details" name="Update Employee record" time="2.407955">
+<system-out><![CDATA[Given I Set PUT employee service api endpoint...............................passed
+When I update request body..................................................passed
+And Send a PUT HTTP request.................................................passed
+Then I receive valid HTTP Response code as 200..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Employee details" name="Get Employee record" time="0.499977">
+<system-out><![CDATA[Given I Set GET employee service api endpoint...............................passed
+When I Set request HEADER...................................................passed
+And Send GET HTTP request...................................................passed
+Then I receive valid HTTP Response code as 200..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Employee details" name="Delete Employee record" time="0.002515">
+<system-out><![CDATA[Given I Set DELETE employee service api endpoint............................passed
+When I Send DELETE HTTP request.............................................passed
+Then I receive valid HTTP Response code as 200..............................passed
+]]></system-out>
+</testcase>
+</testsuite>

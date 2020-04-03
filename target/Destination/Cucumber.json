@@ -1,0 +1,306 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 916045700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "API_Demo.setup()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Add Employee record",
+        "description": "",
+        "id": "employee-details;add-employee-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 77507000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I Set POST employee service api endpoint",
+            "match": {
+              "location": "API_Demo.i_Set_POST_employee_service_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 51100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Set request HEADER and body",
+            "match": {
+              "location": "API_Demo.i_Set_request_HEADER_and_body()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2190010800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Send a POST HTTP request",
+            "match": {
+              "location": "API_Demo.send_a_POST_HTTP_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2701600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I receive valid HTTP Response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "API_Demo.i_receive_valid_HTTP_Response_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 565600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "API_Demo.setup()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Update Employee record",
+        "description": "",
+        "id": "employee-details;update-employee-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I Set PUT employee service api endpoint",
+            "match": {
+              "location": "API_Demo.i_Set_PUT_employee_service_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 25100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I update request body",
+            "match": {
+              "location": "API_Demo.i_update_request_body()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2407190500,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Send a PUT HTTP request",
+            "match": {
+              "location": "API_Demo.send_a_PUT_HTTP_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I receive valid HTTP Response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "API_Demo.i_receive_valid_HTTP_Response_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1845100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "API_Demo.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Get Employee record",
+        "description": "",
+        "id": "employee-details;get-employee-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I Set GET employee service api endpoint",
+            "match": {
+              "location": "API_Demo.i_Set_GET_employee_service_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I Set request HEADER",
+            "match": {
+              "location": "API_Demo.i_Set_request_HEADER()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 497918300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Send GET HTTP request",
+            "match": {
+              "location": "API_Demo.send_GET_HTTP_request()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 153400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I receive valid HTTP Response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "API_Demo.i_receive_valid_HTTP_Response_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2275400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "API_Demo.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Delete Employee record",
+        "description": "",
+        "id": "employee-details;delete-employee-record",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34200,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I Set DELETE employee service api endpoint",
+            "match": {
+              "location": "API_Demo.i_Set_DELETE_employee_service_api_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29800,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I Send DELETE HTTP request",
+            "match": {
+              "location": "API_Demo.i_Send_DELETE_HTTP_request()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 175500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I receive valid HTTP Response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "API_Demo.i_receive_valid_HTTP_Response_code_as(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Employee details",
+    "description": "",
+    "id": "employee-details",
+    "keyword": "Feature",
+    "uri": "apiDemo.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Employee_data"
+      }
+    ]
+  }
+]

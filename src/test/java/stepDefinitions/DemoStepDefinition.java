@@ -27,10 +27,10 @@ import utilities.GetScreenShot;
 
 public class DemoStepDefinition {
 
-	public static final String BROWSER="Chrome"; //values Chrome,FireFox,IE
-	public static String env="WpMobile";
-	public static WebDriver driver;
-	static String scenarioName;
+	private static final String BROWSER="Chrome"; //values Chrome,FireFox,IE
+	private static String env="WpMobile";
+	private static WebDriver driver;
+	private static String scenarioName;
 	GetScreenShot screenshot;
 	DemoPageObjects demoPO;
 	WpmobilePackPageObjects wpPO;
@@ -42,7 +42,6 @@ public class DemoStepDefinition {
 
 	@Before
 	public void browserLaunch(Scenario scenario) throws Exception {	
-
 		System.out.println("Before scenario------------------excecuted");
 		shdriver = new SharedDriver(BROWSER);
 		driver = shdriver.getDriver();
@@ -51,15 +50,12 @@ public class DemoStepDefinition {
 		scenarioName=scenario.getName();
 		environment=new Environment(env);
 		wait=new WebDriverWait(driver, 20);
-
 		demoA = new DemoActions(driver);
 		wpAction=new WpmobilePackActions(driver);
 		demoPO=new DemoPageObjects();
 		wpPO=new WpmobilePackPageObjects();
-
 		demoPO = PageFactory.initElements(driver, DemoPageObjects.class);
 		wpPO = PageFactory.initElements(driver, WpmobilePackPageObjects.class);
-
 	}
 
 	@Given("^i have privileges to access wpmobilePack site$")
@@ -71,65 +67,22 @@ public class DemoStepDefinition {
 
 	@When("^i select product \"([^\"]*)\" from home$")
 	public void i_select_product_from_home(String product) throws Throwable {
-		wpAction.shopClick(product);
-		wait.until(ExpectedConditions.visibilityOf(wpPO.addCartBtn));
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
-		Thread.sleep(1000);
+		wpAction.selectProduct(product, scenarioName);
 	}
 
 	@When("^add the selected product to cart \"([^\"]*)\"$")
 	public void add_the_selected_product_to_cart(String notification) throws Throwable {
-		wpPO.addCartBtn.click();
-		wait.until(ExpectedConditions.visibilityOf(wpPO.notificationMsg));
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
-		wpPO.cartBtn.click();
-		wait.until(ExpectedConditions.visibilityOf(wpPO.checkout));
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
-		wpPO.checkout.click();
-		wait.until(ExpectedConditions.visibilityOf(wpPO.firstName));
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName)); 
+		wpAction.addSelectedProduct(scenarioName);
 	}
 
 	@Then("^go to checkout page , fill the required fields and place the order$")
 	public void go_to_checkout_page_fill_the_required_fields_and_place_the_order(List<FeatureData> data) throws Throwable {
-		wpPO.firstName.clear();
-		wpPO.firstName.sendKeys(data.get(0).firstName);
-		wpPO.lastName.clear();
-		wpPO.lastName.sendKeys(data.get(0).lastName);
-		wpPO.company.clear();
-		wpPO.company.sendKeys(data.get(0).companyName);
-		wpPO.country.click();
-		wpPO.countryTxtField.sendKeys(data.get(0).country);
-		wpPO.countrySelect.click();
-		wpPO.address1.clear();
-		wpPO.address1.sendKeys(data.get(0).address1);
-		wpPO.address2.clear();
-		wpPO.address2.sendKeys(data.get(0).address2);
-		wpPO.city.clear();
-		wpPO.city.sendKeys(data.get(0).city);
-		wpPO.state.click();
-		wpPO.countryTxtField.sendKeys(data.get(0).country);
-		wpPO.countrySelect.click();
-		wpPO.postCode.clear();
-		wpPO.postCode.sendKeys(data.get(0).zip);
-		wpPO.phone.clear();
-		wpPO.phone.sendKeys(data.get(0).phoneNumber);
-		wpPO.email.clear();
-		wpPO.email.sendKeys(data.get(0).email);
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
-//		Thread.sleep(2000);
-//		wpAction.scroll(wpPO.orderBtn);
-//		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
-
+		wpAction.fillTheFields(data, scenarioName);
 	}
 
 	@Then("^order has been successfully placed \"([^\"]*)\"$")
-	public void order_has_been_successfully_placed(String arg1) throws Throwable {
-		//Thread.sleep(2000);
-		wpPO.orderBtn.click();
-		//Thread.sleep(4000);
-		wait.until(ExpectedConditions.visibilityOf(wpPO.orderReceived));
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName)); 
+	public void order_has_been_successfully_placed(String orderMsg) throws Throwable {
+		wpAction.orderPlaced(orderMsg,scenarioName);
 	}
 
 }

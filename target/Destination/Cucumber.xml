@@ -1,27 +1,54 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="71.599355">
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack" time="35.424624">
-<system-out><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="53.896768">
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack" time="33.843648">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)&#13;&#10;&#9;at ✽.Then order has been successfully placed &quot;Order received&quot;(wpmobile.feature:12)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
 When i select product "Patient Ninja" from home.............................passed
 And add the selected product to cart "Patient Ninja was added to your shopping cart".passed
 Then go to checkout page , fill the required fields and place the order.....passed
-Then order has been successfully placed "Order received"....................passed
-]]></system-out>
+Then order has been successfully placed "Order received"....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ✽.Then order has been successfully placed "Order received"(wpmobile.feature:12)
+]]></failure>
 </testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes" time="17.414597">
-<system-out><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes" time="9.852574">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)&#13;&#10;&#9;at ✽.Then order has been successfully placed &quot;Order received&quot;(wpmobile.feature:22)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
 When i select product "Happy Ninja" from home...............................passed
 And add the selected product to cart "Happy Ninja was added to your shopping cart".passed
 Then go to checkout page , fill the required fields and place the order.....passed
-Then order has been successfully placed "Order received"....................passed
-]]></system-out>
+Then order has been successfully placed "Order received"....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ✽.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+]]></failure>
 </testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes 2" time="18.760134">
-<system-out><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes 2" time="10.200546">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)&#13;&#10;&#9;at ✽.Then order has been successfully placed &quot;Order received&quot;(wpmobile.feature:22)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
 When i select product "Premium Quality" from home...........................passed
 And add the selected product to cart "Premium Quality was added to your shopping cart".passed
 Then go to checkout page , fill the required fields and place the order.....passed
-Then order has been successfully placed "Order received"....................passed
-]]></system-out>
+Then order has been successfully placed "Order received"....................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ✽.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+]]></failure>
 </testcase>
 </testsuite>

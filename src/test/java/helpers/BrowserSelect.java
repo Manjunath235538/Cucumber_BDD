@@ -47,8 +47,8 @@ public class BrowserSelect {
 			@SuppressWarnings("static-access")
 			DesiredCapabilities chromeCapability = new DesiredCapabilities().chrome();
 			chromeCapability.setJavascriptEnabled(true);
-			chromeCapability.setBrowserName("chrome");
-			chromeCapability.setPlatform(Platform.WINDOWS);
+			//chromeCapability.setBrowserName("chrome");
+			//chromeCapability.setPlatform(Platform.WINDOWS);
 			chromeCapability.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
 			chromeCapability.setCapability("profile.default_content_settings.popups", 0);	
 		

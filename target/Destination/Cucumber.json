@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 10210410000,
+              "duration": 10305323500,
               "status": "passed"
             },
             "match": {
@@ -15,7 +15,7 @@
           },
           {
             "result": {
-              "duration": 2755500,
+              "duration": 3882000,
               "status": "passed"
             },
             "match": {
@@ -32,7 +32,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5333763300,
+              "duration": 9829616900,
               "status": "passed"
             },
             "line": 6,
@@ -44,7 +44,7 @@
           },
           {
             "result": {
-              "duration": 2569954600,
+              "duration": 2752550900,
               "status": "passed"
             },
             "line": 7,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 6427637200,
+              "duration": 7610390400,
               "status": "passed"
             },
             "line": 8,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 4439694200,
+              "duration": 2772024100,
               "status": "passed"
             },
             "line": 9,
@@ -128,8 +128,9 @@
           },
           {
             "result": {
-              "duration": 6440409000,
-              "status": "passed"
+              "duration": 569860100,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)\r\n\tat stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)\r\n\tat ✽.Then order has been successfully placed \"Order received\"(wpmobile.feature:12)\r\n",
+              "status": "failed"
             },
             "line": 12,
             "name": "order has been successfully placed \"Order received\"",
@@ -156,7 +157,7 @@
         "before": [
           {
             "result": {
-              "duration": 1440300,
+              "duration": 3910300,
               "status": "passed"
             },
             "match": {
@@ -165,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 2283200,
+              "duration": 3974500,
               "status": "passed"
             },
             "match": {
@@ -182,7 +183,7 @@
         "steps": [
           {
             "result": {
-              "duration": 708554700,
+              "duration": 759103400,
               "status": "passed"
             },
             "line": 16,
@@ -194,7 +195,7 @@
           },
           {
             "result": {
-              "duration": 1606306400,
+              "duration": 1685578400,
               "status": "passed"
             },
             "line": 17,
@@ -215,7 +216,7 @@
           },
           {
             "result": {
-              "duration": 4002061500,
+              "duration": 4052519900,
               "status": "passed"
             },
             "line": 18,
@@ -236,7 +237,7 @@
           },
           {
             "result": {
-              "duration": 4536311500,
+              "duration": 2688426300,
               "status": "passed"
             },
             "line": 19,
@@ -284,8 +285,9 @@
           },
           {
             "result": {
-              "duration": 6557639300,
-              "status": "passed"
+              "duration": 659061000,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)\r\n\tat stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)\r\n\tat ✽.Then order has been successfully placed \"Order received\"(wpmobile.feature:22)\r\n",
+              "status": "failed"
             },
             "line": 22,
             "name": "order has been successfully placed \"Order received\"",
@@ -316,7 +318,7 @@
         "before": [
           {
             "result": {
-              "duration": 1673000,
+              "duration": 3167200,
               "status": "passed"
             },
             "match": {
@@ -325,7 +327,7 @@
           },
           {
             "result": {
-              "duration": 1455000,
+              "duration": 3245000,
               "status": "passed"
             },
             "match": {
@@ -342,7 +344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 732222700,
+              "duration": 757945500,
               "status": "passed"
             },
             "line": 16,
@@ -354,7 +356,7 @@
           },
           {
             "result": {
-              "duration": 1679837500,
+              "duration": 1852721100,
               "status": "passed"
             },
             "line": 17,
@@ -375,7 +377,7 @@
           },
           {
             "result": {
-              "duration": 5022543100,
+              "duration": 4344253800,
               "status": "passed"
             },
             "line": 18,
@@ -396,7 +398,7 @@
           },
           {
             "result": {
-              "duration": 4672848100,
+              "duration": 2667738900,
               "status": "passed"
             },
             "line": 19,
@@ -444,8 +446,9 @@
           },
           {
             "result": {
-              "duration": 6649554600,
-              "status": "passed"
+              "duration": 571474300,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)\r\n\tat stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)\r\n\tat ✽.Then order has been successfully placed \"Order received\"(wpmobile.feature:22)\r\n",
+              "status": "failed"
             },
             "line": 22,
             "name": "order has been successfully placed \"Order received\"",

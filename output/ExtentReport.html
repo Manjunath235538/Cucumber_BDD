@@ -34,6 +34,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -47,7 +48,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Mar 17, 2020 12:04:24 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 6, 2020 07:40:00 PM</span>
 				</a>
 			</li>
 			<li>
@@ -73,6 +74,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -135,10 +137,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> feature(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -150,10 +152,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>3</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -165,10 +167,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>15</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='80%'><span class='strong'>12</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='20%'>3</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -182,18 +184,18 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>showcasing BDD framework using wpmobile ecommerce site</span>
-						<span class='test-time'>Mar 17, 2020 12:04:24 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Apr 6, 2020 07:40:00 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 	<div class='category-list'>
 		<span class='category label white-text'>@PlaceOrder</span>
 	</div>
-	<span class='duration right label'>0h 0m 35s+511ms</span>
+	<span class='duration right label'>0h 0m 34s+2ms</span>
 	<div class='desc'>
 		<b>Scenario</b>
 		<span class="desc-text">To place an order from wpmobilePack</span>
@@ -205,7 +207,7 @@
 			
 			<span class="bdd-step-name">Given i have privileges to access wpmobilePack site</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120439.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074019.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'>passed</div>
 			
@@ -216,7 +218,7 @@
 			
 			<span class="bdd-step-name">When i select product "Patient Ninja" from home</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120440.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074021.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'>passed</div>
 			
@@ -227,9 +229,9 @@
 			
 			<span class="bdd-step-name">And add the selected product to cart "Patient Ninja was added to your shopping cart"</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120442.png"><i class='material-icons'>panorama</i></a></li>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120443.png"><i class='material-icons'>panorama</i></a></li>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120448.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074023.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074024.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074030.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'>passed</div>
 			
@@ -240,34 +242,40 @@
 			
 			<span class="bdd-step-name">Then go to checkout page , fill the required fields and place the order</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120450.png"><i class='material-icons'>panorama</i></a></li>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120452.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074033.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
 				<div class='pre'><table><tr><td>itemName</td><td>firstName</td><td>lastName</td><td>companyName</td><td>country</td><td>address1</td><td>address2</td><td>city</td><td>state</td><td>zip</td><td>phoneNumber</td><td>email</td></tr><tr><td>Patient Ninja</td><td>Handy</td><td>David</td><td>HP</td><td>United States (US)</td><td>street 1</td><td>street 2</td><td>ohio</td><td>Missouri</td><td>43210</td><td>987654321</td><td>mail@gmail.com</td></tr></table></div>
 				<div class='pre'>passed</div>
 			
 		</li>
-		<li test-id='7' class='node then pass' status='pass'>
+		<li test-id='7' class='node then fail' status='fail'>
 			
 			<b>Then</b>
 			
 			<span class="bdd-step-name">Then order has been successfully placed "Order received"</span>
 			<ul class='screenshots right'>
-				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200317120459.png"><i class='material-icons'>panorama</i></a></li>
+				<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack\To place an order from wpmobilePack_20200406074033.png"><i class='material-icons'>panorama</i></a></li>
 			</ul>
-				<div class='pre'>passed</div>
+				<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ?.Then order has been successfully placed "Order received"(wpmobile.feature:12)
+</pre></div>
 			
 		</li>
 	</ul>
 </div>
-<div class='scenariooutline node' test-id='8' status='pass'>
-	<span class='duration right label'>0h 0m 36s+199ms</span>
+<div class='scenariooutline node' test-id='8' status='fail'>
+	<span class='duration right label'>0h 0m 20s+92ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">To place an order from wpmobilePack for MultipleTimes</span>
 	</div>
 	<ul class='steps'>
-		<li test-id='9' class='node scenario pass' status='pass'>
+		<li test-id='9' class='node scenario fail' status='fail'>
 			<div class='category-list'>
 				<span class='category label white-text'>@SampleFeature_wpmobile</span>
 				<span class='category label white-text'>@PlaceOrder_MultipleTimes</span>
@@ -281,45 +289,51 @@
 					<li test-id='10' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given i have privileges to access wpmobilePack site</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120459.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074034.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='11' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When i select product "Happy Ninja" from home</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120500.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074035.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='12' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And add the selected product to cart "Happy Ninja was added to your shopping cart"</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120502.png"><i class='material-icons'>panorama</i></a></li>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120502.png"><i class='material-icons'>panorama</i></a></li>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120505.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074036.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074037.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074040.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='13' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then go to checkout page , fill the required fields and place the order</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120507.png"><i class='material-icons'>panorama</i></a></li>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120510.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074042.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'><table><tr><td>itemName</td><td>firstName</td><td>lastName</td><td>companyName</td><td>country</td><td>address1</td><td>address2</td><td>city</td><td>state</td><td>zip</td><td>phoneNumber</td><td>email</td></tr><tr><td>Patient Ninja</td><td>Handy</td><td>David</td><td>HP</td><td>United States (US)</td><td>street 1</td><td>street 2</td><td>ohio</td><td>Missouri</td><td>43210</td><td>987654321</td><td>mail@gmail.com</td></tr></table></div>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='14' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='14' class='node then fail' status='fail'><b>Then</b>
 						<span class="bdd-step-name">Then order has been successfully placed "Order received"</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120516.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074043.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
-							<div class='pre'>passed</div>
+							<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ?.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+</pre></div>
 					</li>
 				</ul>
 		</li>
-		<li test-id='15' class='node scenario pass' status='pass'>
+		<li test-id='15' class='node scenario fail' status='fail'>
 			<div class='category-list'>
 				<span class='category label white-text'>@SampleFeature_wpmobile</span>
 				<span class='category label white-text'>@PlaceOrder_MultipleTimes</span>
@@ -333,41 +347,47 @@
 					<li test-id='16' class='node given pass' status='pass'><b>Given</b>
 						<span class="bdd-step-name">Given i have privileges to access wpmobilePack site</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120517.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074044.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='17' class='node when pass' status='pass'><b>When</b>
 						<span class="bdd-step-name">When i select product "Premium Quality" from home</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120518.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074045.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='18' class='node and pass' status='pass'><b>And</b>
 						<span class="bdd-step-name">And add the selected product to cart "Premium Quality was added to your shopping cart"</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120519.png"><i class='material-icons'>panorama</i></a></li>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120520.png"><i class='material-icons'>panorama</i></a></li>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120524.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074046.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074047.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074050.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='19' class='node then pass' status='pass'><b>Then</b>
 						<span class="bdd-step-name">Then go to checkout page , fill the required fields and place the order</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120526.png"><i class='material-icons'>panorama</i></a></li>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120528.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074053.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
 							<div class='pre'><table><tr><td>itemName</td><td>firstName</td><td>lastName</td><td>companyName</td><td>country</td><td>address1</td><td>address2</td><td>city</td><td>state</td><td>zip</td><td>phoneNumber</td><td>email</td></tr><tr><td>Patient Ninja</td><td>Handy</td><td>David</td><td>HP</td><td>United States (US)</td><td>street 1</td><td>street 2</td><td>ohio</td><td>Missouri</td><td>43210</td><td>987654321</td><td>mail@gmail.com</td></tr></table></div>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='20' class='node then pass' status='pass'><b>Then</b>
+					<li test-id='20' class='node then fail' status='fail'><b>Then</b>
 						<span class="bdd-step-name">Then order has been successfully placed "Order received"</span>
 						<ul class='screenshots right'>
-							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200317120535.png"><i class='material-icons'>panorama</i></a></li>
+							<li><a data-featherlight="image" href="C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\target\screenshots\capture\To place an order from wpmobilePack for MultipleTimes\To place an order from wpmobilePack for MultipleTimes_20200406074053.png"><i class='material-icons'>panorama</i></a></li>
 						</ul>
-							<div class='pre'>passed</div>
+							<div class='pre'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ?.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+</pre></div>
 					</li>
 				</ul>
 		</li>
@@ -429,13 +449,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@SampleFeature_wpmobile</span>
 						<span class='category-status right'>
-							<span class='label pass'>3</span>
+							<span class='label fail'>3</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 3</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 3</span>
 							
 						</div>
 					
@@ -450,19 +470,19 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 17, 2020 12:04:24 PM</td>
+										<td>Apr 6, 2020 07:40:00 PM</td>
 										<td class='linked' test-id='1'>showcasing BDD framework using wpmobile ecommerce site</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Mar 17, 2020 12:04:59 PM</td>
+										<td>Apr 6, 2020 07:40:34 PM</td>
 										<td class='linked' test-id='9'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack for MultipleTimes.To place an order from wpmobilePack for MultipleTimes</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Mar 17, 2020 12:05:17 PM</td>
+										<td>Apr 6, 2020 07:40:44 PM</td>
 										<td class='linked' test-id='15'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack for MultipleTimes.To place an order from wpmobilePack for MultipleTimes</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -473,13 +493,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@PlaceOrder</span>
 						<span class='category-status right'>
-							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -494,9 +514,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 17, 2020 12:04:24 PM</td>
+										<td>Apr 6, 2020 07:40:00 PM</td>
 										<td class='linked' test-id='2'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -507,13 +527,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@PlaceOrder_MultipleTimes</span>
 						<span class='category-status right'>
-							<span class='label pass'>2</span>
+							<span class='label fail'>2</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
 							
+							<span class='label red lighten-1 white-text'>Failed: 2</span>
 							
 						</div>
 					
@@ -528,14 +548,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 17, 2020 12:04:59 PM</td>
+										<td>Apr 6, 2020 07:40:34 PM</td>
 										<td class='linked' test-id='9'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack for MultipleTimes.To place an order from wpmobilePack for MultipleTimes</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Mar 17, 2020 12:05:17 PM</td>
+										<td>Apr 6, 2020 07:40:44 PM</td>
 										<td class='linked' test-id='15'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack for MultipleTimes.To place an order from wpmobilePack for MultipleTimes</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -554,6 +574,98 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>java.lang.AssertionError</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>3</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Apr 6, 2020 07:40:33 PM</td>
+                                                        <td class='linked' test-id='7'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack.Then order has been successfully placed "Order received"</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ?.Then order has been successfully placed "Order received"(wpmobile.feature:12)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 6, 2020 07:40:43 PM</td>
+                                                        <td class='linked' test-id='14'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack for MultipleTimes.To place an order from wpmobilePack for MultipleTimes.Then order has been successfully placed "Order received"</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ?.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+</pre></pre></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apr 6, 2020 07:40:53 PM</td>
+                                                        <td class='linked' test-id='20'>showcasing BDD framework using wpmobile ecommerce site.To place an order from wpmobilePack for MultipleTimes.To place an order from wpmobilePack for MultipleTimes.Then order has been successfully placed "Order received"</td>
+                                                        <td><pre><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
+	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
+	at ?.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -581,19 +693,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 17, 2020 12:04:24 PM</div>
+					<div class='panel-lead'>Apr 6, 2020 07:40:00 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 17, 2020 12:05:35 PM</div>
+			 		<div class='panel-lead'>Apr 6, 2020 07:40:54 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 11s+825ms</div>
+					<div class='panel-lead'>0h 0m 54s+214ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -610,29 +722,29 @@
 						</tr>
 						<tr>
 							<td>@SampleFeature_wpmobile</td>
+							<td>0</td>
 							<td>3</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>@PlaceOrder</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>@PlaceOrder_MultipleTimes</td>
+							<td>0</td>
 							<td>2</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -648,31 +760,31 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 1,
 				
-				passChild: 3,
-				failChild: 0,
+				passChild: 0,
+				failChild: 3,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 3,
 				
-				passGrandChild: 15,
-				failGrandChild: 0,
+				passGrandChild: 12,
+				failGrandChild: 3,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 3,
 			};
 		</script>
 		

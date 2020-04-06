@@ -13,11 +13,11 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 10210410000,
+  "duration": 10305323500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2755500,
+  "duration": 3882000,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,7 +99,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()"
 });
 formatter.result({
-  "duration": 5333763300,
+  "duration": 9829616900,
   "status": "passed"
 });
 formatter.match({
@@ -112,7 +112,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_select_product_from_home(String)"
 });
 formatter.result({
-  "duration": 2569954600,
+  "duration": 2752550900,
   "status": "passed"
 });
 formatter.match({
@@ -125,14 +125,14 @@ formatter.match({
   "location": "DemoStepDefinition.add_the_selected_product_to_cart(String)"
 });
 formatter.result({
-  "duration": 6427637200,
+  "duration": 7610390400,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData\u003e)"
 });
 formatter.result({
-  "duration": 4439694200,
+  "duration": 2772024100,
   "status": "passed"
 });
 formatter.match({
@@ -145,8 +145,9 @@ formatter.match({
   "location": "DemoStepDefinition.order_has_been_successfully_placed(String)"
 });
 formatter.result({
-  "duration": 6440409000,
-  "status": "passed"
+  "duration": 569860100,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)\r\n\tat stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)\r\n\tat ✽.Then order has been successfully placed \"Order received\"(wpmobile.feature:12)\r\n",
+  "status": "failed"
 });
 formatter.scenarioOutline({
   "line": 15,
@@ -257,11 +258,11 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 1440300,
+  "duration": 3910300,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2283200,
+  "duration": 3974500,
   "status": "passed"
 });
 formatter.scenario({
@@ -353,7 +354,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()"
 });
 formatter.result({
-  "duration": 708554700,
+  "duration": 759103400,
   "status": "passed"
 });
 formatter.match({
@@ -366,7 +367,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_select_product_from_home(String)"
 });
 formatter.result({
-  "duration": 1606306400,
+  "duration": 1685578400,
   "status": "passed"
 });
 formatter.match({
@@ -379,14 +380,14 @@ formatter.match({
   "location": "DemoStepDefinition.add_the_selected_product_to_cart(String)"
 });
 formatter.result({
-  "duration": 4002061500,
+  "duration": 4052519900,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData\u003e)"
 });
 formatter.result({
-  "duration": 4536311500,
+  "duration": 2688426300,
   "status": "passed"
 });
 formatter.match({
@@ -399,15 +400,16 @@ formatter.match({
   "location": "DemoStepDefinition.order_has_been_successfully_placed(String)"
 });
 formatter.result({
-  "duration": 6557639300,
+  "duration": 659061000,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)\r\n\tat stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)\r\n\tat ✽.Then order has been successfully placed \"Order received\"(wpmobile.feature:22)\r\n",
+  "status": "failed"
+});
+formatter.before({
+  "duration": 3167200,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1673000,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 1455000,
+  "duration": 3245000,
   "status": "passed"
 });
 formatter.scenario({
@@ -499,7 +501,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()"
 });
 formatter.result({
-  "duration": 732222700,
+  "duration": 757945500,
   "status": "passed"
 });
 formatter.match({
@@ -512,7 +514,7 @@ formatter.match({
   "location": "DemoStepDefinition.i_select_product_from_home(String)"
 });
 formatter.result({
-  "duration": 1679837500,
+  "duration": 1852721100,
   "status": "passed"
 });
 formatter.match({
@@ -525,14 +527,14 @@ formatter.match({
   "location": "DemoStepDefinition.add_the_selected_product_to_cart(String)"
 });
 formatter.result({
-  "duration": 5022543100,
+  "duration": 4344253800,
   "status": "passed"
 });
 formatter.match({
   "location": "DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData\u003e)"
 });
 formatter.result({
-  "duration": 4672848100,
+  "duration": 2667738900,
   "status": "passed"
 });
 formatter.match({
@@ -545,7 +547,8 @@ formatter.match({
   "location": "DemoStepDefinition.order_has_been_successfully_placed(String)"
 });
 formatter.result({
-  "duration": 6649554600,
-  "status": "passed"
+  "duration": 571474300,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)\r\n\tat stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)\r\n\tat ✽.Then order has been successfully placed \"Order received\"(wpmobile.feature:22)\r\n",
+  "status": "failed"
 });
 });

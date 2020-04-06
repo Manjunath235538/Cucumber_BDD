@@ -14,7 +14,6 @@ public class WpmobilePackPageObjects {
 	@FindBy(how=How.XPATH, using="//div[@class='infinite-scroll-component']/div")
 	public  WebElement homeGrid;
 	
-	
 	@FindBy(how=How.XPATH, using="//div[@class='top-center']/span/div/div/div[2]/div[2]")
 	public  WebElement notificationMsg;
 	
@@ -23,7 +22,6 @@ public class WpmobilePackPageObjects {
 	
 	@FindBy(how=How.XPATH,using="//*[@id='root']/div/div/div[2]/div[2]/div[2]/button")
 	public  WebElement addCartBtn;
-	
 	
 	@FindBy(how=How.CLASS_NAME,using="icons")
 	public  WebElement cartBtn;
@@ -36,8 +34,6 @@ public class WpmobilePackPageObjects {
 	
 	@FindBy(how=How.ID,using="billing_last_name")
 	public  WebElement lastName;
-	
-	
 	
 	@FindBy(how=How.ID,using="billing_company")
 	public  WebElement company;
@@ -53,15 +49,19 @@ public class WpmobilePackPageObjects {
 	
 	@FindBy(how=How.ID,using="billing_address_1")
 	public  WebElement address1;
+	
 	@FindBy(how=How.ID,using="billing_address_2")
 	public  WebElement address2;
+	
 	@FindBy(how=How.ID,using="billing_city")
 	public  WebElement city;
 	
 	@FindBy(how=How.ID,using="select2-billing_state-container")
 	public  WebElement state;
+	
 	@FindBy(how=How.ID,using="billing_postcode")
 	public  WebElement postCode;
+	
 	@FindBy(how=How.ID,using="billing_phone")
 	public  WebElement phone;
 	

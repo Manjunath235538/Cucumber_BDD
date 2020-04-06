@@ -42,7 +42,7 @@ public class ToolsqaStepDefinition {
 		System.out.println("Before scenario------------------excecuted");
 		shdriver = new SharedDriver(BROWSER);
 		driver = shdriver.getDriver();
-		System.out.println(driver);
+		System.out.println("printing driver "+driver);
 		screenshot = new GetScreenShot();
 		scenarioName=scenario.getName();
 		environment=new Environment(env);

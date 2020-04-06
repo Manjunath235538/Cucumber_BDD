@@ -7,7 +7,7 @@ Feature: showcasing BDD framework using wpmobile ecommerce site
     When i select product "Patient Ninja" from home
     And add the selected product to cart "Patient Ninja was added to your shopping cart"
     Then go to checkout page , fill the required fields and place the order
-      | itemName      | firstName | lastName | companyName | country            | address1 | address2 | city | state    | zip    | phoneNumber | email          |
+      | itemName      | firstName | lastName | companyName | country            | address1 | address2 | city | state    | zip   | phoneNumber | email          |
       | Patient Ninja | Handy     | David    | HP          | United States (US) | street 1 | street 2 | ohio | Missouri | 43210 |   987654321 | mail@gmail.com |
     Then order has been successfully placed "Order received"
 
@@ -17,7 +17,7 @@ Feature: showcasing BDD framework using wpmobile ecommerce site
     When i select product "<itemName>" from home
     And add the selected product to cart "<message>"
     Then go to checkout page , fill the required fields and place the order
-      | itemName      | firstName | lastName | companyName | country            | address1 | address2 | city | state    | zip    | phoneNumber | email          |
+      | itemName      | firstName | lastName | companyName | country            | address1 | address2 | city | state    | zip   | phoneNumber | email          |
       | Patient Ninja | Handy     | David    | HP          | United States (US) | street 1 | street 2 | ohio | Missouri | 43210 |   987654321 | mail@gmail.com |
     Then order has been successfully placed "Order received"
 

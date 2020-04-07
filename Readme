@@ -20,27 +20,20 @@ Project Structure:
     |    |    |        \---TestRunner.java
     |    |    |    \---pageobjects
     |    |    |         \---*.java
-    |    |    |    \---stepdefs
+    |    |    |    \---stepDefinitions
     |    |    |         \---*.java
     |    |    |    \---utilities
     |    |    |         \---*.java
     |    |    |    \---actions
     |    |    |          \---*.java
     |    |    +---resources
-    |    |      |    \---features
-    |    |      |       \---api
-    |    |      |            \---*.feature
-    |    |      |      \---web
-    |    |      |             \---*.feature
+    |    |    |    \---features
+    |    |    |       \---api
+    |    |    |            \---*.feature
+    |    |    |       \---web
+    |    |    |             \---*.feature
     |    +---main
     |    |    +---java
-    |    |    |    \---pageobjects
-    |    |    |    |    \---*.java
-    |    |    |    \---stepdefs
-    |    |    |    |    \---*.java
-    |    |    |    |---utilities
-    |    |    |    |    \---Helper.java
-    |    |    |    |    \---Browser.java
     +---src
     |
     +---target

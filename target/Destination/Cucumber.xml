@@ -1,54 +1,134 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="53.896768">
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack" time="33.843648">
-<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)&#13;&#10;&#9;at ✽.Then order has been successfully placed &quot;Order received&quot;(wpmobile.feature:12)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
-When i select product "Patient Ninja" from home.............................passed
-And add the selected product to cart "Patient Ninja was added to your shopping cart".passed
-Then go to checkout page , fill the required fields and place the order.....passed
-Then order has been successfully placed "Order received"....................failed
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="38.629261">
+<testcase classname="showcasing BDD framework using Toolsqa site" name="To access cucumber tutorial" time="22.022329">
+<system-out><![CDATA[Given i aunthorized user able to access toolsqa site........................passed
+When im at home page and navigate to tutorials menu.........................passed
+Then navigate to "Frameworks & Libraries" menu followed by "Cucumber".......passed
+]]></system-out>
+</testcase>
+<testcase classname="showcasing BDD framework using Toolsqa site" name="To verify allure reporting is  Working or not" time="0.017289">
+<system-out><![CDATA[Given I have a valid user...................................................passed
+When I login to app.........................................................passed
+Then homepage screen should be displayed....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack" time="14.518007">
+<failure message="java.lang.NoClassDefFoundError: gherkin/formatter/Reporter&#13;&#10;&#9;at java.lang.ClassLoader.defineClass1(Native Method)&#13;&#10;&#9;at java.lang.ClassLoader.defineClass(Unknown Source)&#13;&#10;&#9;at java.security.SecureClassLoader.defineClass(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader.defineClass(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader.access$100(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader$1.run(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader$1.run(Unknown Source)&#13;&#10;&#9;at java.security.AccessController.doPrivileged(Native Method)&#13;&#10;&#9;at java.net.URLClassLoader.findClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)&#13;&#10;&#9;at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)&#13;&#10;&#9;at ✽.i select product &quot;Patient Ninja&quot; from home(file:src/test/resources/features/wpmobile.feature:7)&#13;&#10;Caused by: java.lang.ClassNotFoundException: gherkin.formatter.Reporter&#13;&#10;&#9;at java.net.URLClassLoader.findClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.defineClass1(Native Method)&#13;&#10;&#9;at java.lang.ClassLoader.defineClass(Unknown Source)&#13;&#10;&#9;at java.security.SecureClassLoader.defineClass(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader.defineClass(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader.access$100(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader$1.run(Unknown Source)&#13;&#10;&#9;at java.net.URLClassLoader$1.run(Unknown Source)&#13;&#10;&#9;at java.security.AccessController.doPrivileged(Native Method)&#13;&#10;&#9;at java.net.URLClassLoader.findClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at java.lang.ClassLoader.loadClass(Unknown Source)&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)&#13;&#10;&#9;at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Method.invoke(Unknown Source)&#13;&#10;&#9;at cucumber.runtime.Utils$1.call(Utils.java:26)&#13;&#10;&#9;at cucumber.runtime.Timeout.timeout(Timeout.java:16)&#13;&#10;&#9;at cucumber.runtime.Utils.invoke(Utils.java:20)&#13;&#10;&#9;at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)&#13;&#10;&#9;at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)&#13;&#10;&#9;at cucumber.runner.TestStep.executeStep(TestStep.java:65)&#13;&#10;&#9;at cucumber.runner.TestStep.run(TestStep.java:50)&#13;&#10;&#9;at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)&#13;&#10;&#9;at cucumber.runner.TestCase.run(TestCase.java:46)&#13;&#10;&#9;at cucumber.runner.Runner.runPickle(Runner.java:50)&#13;&#10;&#9;at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)&#13;&#10;&#9;at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)&#13;&#10;&#9;at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)&#13;&#10;&#9;at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)&#13;&#10;&#9;at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#13;&#10;&#9;at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#13;&#10;&#9;at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#13;&#10;&#9;at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#13;&#10;&#9;at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#13;&#10;&#9;at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)&#13;&#10;&#9;at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)&#13;&#10;&#9;at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
+When i select product "Patient Ninja" from home.............................failed
+And add the selected product to cart "Patient Ninja was added to your shopping cart".skipped
+Then go to checkout page , fill the required fields and place the order.....skipped
+Then order has been successfully placed "Order received"....................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
-	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
-	at ✽.Then order has been successfully placed "Order received"(wpmobile.feature:12)
+java.lang.NoClassDefFoundError: gherkin/formatter/Reporter
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
+	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
+	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
+	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
+	at ✽.i select product "Patient Ninja" from home(file:src/test/resources/features/wpmobile.feature:7)
+Caused by: java.lang.ClassNotFoundException: gherkin.formatter.Reporter
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(Unknown Source)
+	at java.security.SecureClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.defineClass(Unknown Source)
+	at java.net.URLClassLoader.access$100(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.net.URLClassLoader$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
+	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
+	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
+	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
+	at cucumber.runner.TestStep.run(TestStep.java:50)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:46)
+	at cucumber.runner.Runner.runPickle(Runner.java:50)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
 ]]></failure>
 </testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes" time="9.852574">
-<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)&#13;&#10;&#9;at ✽.Then order has been successfully placed &quot;Order received&quot;(wpmobile.feature:22)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
-When i select product "Happy Ninja" from home...............................passed
-And add the selected product to cart "Happy Ninja was added to your shopping cart".passed
-Then go to checkout page , fill the required fields and place the order.....passed
-Then order has been successfully placed "Order received"....................failed
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes" time="0.987906">
+<failure message="java.lang.NoClassDefFoundError: com/vimalselvam/cucumber/listener/ExtentCucumberFormatter&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)&#13;&#10;&#9;at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)&#13;&#10;&#9;at ✽.i select product &quot;Happy Ninja&quot; from home(file:src/test/resources/features/wpmobile.feature:17)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
+When i select product "Happy Ninja" from home...............................failed
+And add the selected product to cart "Happy Ninja was added to your shopping cart".skipped
+Then go to checkout page , fill the required fields and place the order.....skipped
+Then order has been successfully placed "Order received"....................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
-	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
-	at ✽.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+java.lang.NoClassDefFoundError: com/vimalselvam/cucumber/listener/ExtentCucumberFormatter
+	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
+	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
+	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
+	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
+	at ✽.i select product "Happy Ninja" from home(file:src/test/resources/features/wpmobile.feature:17)
 ]]></failure>
 </testcase>
-<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes 2" time="10.200546">
-<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)&#13;&#10;&#9;at ✽.Then order has been successfully placed &quot;Order received&quot;(wpmobile.feature:22)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
-When i select product "Premium Quality" from home...........................passed
-And add the selected product to cart "Premium Quality was added to your shopping cart".passed
-Then go to checkout page , fill the required fields and place the order.....passed
-Then order has been successfully placed "Order received"....................failed
+<testcase classname="showcasing BDD framework using wpmobile ecommerce site" name="To place an order from wpmobilePack for MultipleTimes 2" time="1.08373">
+<failure message="java.lang.NoClassDefFoundError: com/vimalselvam/cucumber/listener/ExtentCucumberFormatter&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)&#13;&#10;&#9;at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)&#13;&#10;&#9;at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)&#13;&#10;&#9;at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)&#13;&#10;&#9;at ✽.i select product &quot;Premium Quality&quot; from home(file:src/test/resources/features/wpmobile.feature:17)&#13;&#10;"><![CDATA[Given i have privileges to access wpmobilePack site.........................passed
+When i select product "Premium Quality" from home...........................failed
+And add the selected product to cart "Premium Quality was added to your shopping cart".skipped
+Then go to checkout page , fill the required fields and place the order.....skipped
+Then order has been successfully placed "Order received"....................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertTrue(Assert.java:52)
-	at actions.WpmobilePackActions.orderPlaced(WpmobilePackActions.java:128)
-	at stepDefinitions.DemoStepDefinition.order_has_been_successfully_placed(DemoStepDefinition.java:85)
-	at ✽.Then order has been successfully placed "Order received"(wpmobile.feature:22)
+java.lang.NoClassDefFoundError: com/vimalselvam/cucumber/listener/ExtentCucumberFormatter
+	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
+	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
+	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
+	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
+	at ✽.i select product "Premium Quality" from home(file:src/test/resources/features/wpmobile.feature:17)
 ]]></failure>
 </testcase>
 </testsuite>

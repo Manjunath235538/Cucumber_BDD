@@ -9,20 +9,20 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.vimalselvam.cucumber.listener.Reporter;
 
 import actions.DemoActions;
 import actions.WpmobilePackActions;
-import cucumber.api.Scenario;
-import cucumber.api.java.Before;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import helpers.Environment;
 import helpers.FeatureData;
 import helpers.SharedDriver;
+import io.cucumber.core.api.Scenario;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageObjects.DemoPageObjects;
 import pageObjects.WpmobilePackPageObjects;
+import utilities.AllureReports;
 import utilities.GetScreenShot;
 
 public class DemoStepDefinition {
@@ -36,6 +36,7 @@ public class DemoStepDefinition {
 	WpmobilePackPageObjects wpPO;
 	DemoActions demoA;
 	WpmobilePackActions wpAction;
+	AllureReports areport;
 	SharedDriver shdriver;
 	WebDriverWait wait;
 	Environment environment;
@@ -52,6 +53,7 @@ public class DemoStepDefinition {
 		wait=new WebDriverWait(driver, 20);
 		demoA = new DemoActions(driver);
 		wpAction=new WpmobilePackActions(driver);
+		areport=new AllureReports(driver);
 		demoPO=new DemoPageObjects();
 		wpPO=new WpmobilePackPageObjects();
 		demoPO = PageFactory.initElements(driver, DemoPageObjects.class);
@@ -62,7 +64,7 @@ public class DemoStepDefinition {
 	public void i_have_privileges_to_access_wpmobilePack_site() throws Throwable {
 		driver.get(environment.getURL());
 		wait.until(ExpectedConditions.visibilityOf(wpPO.homeGrid));
-		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
+		//Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 	}
 
 	@When("^i select product \"([^\"]*)\" from home$")

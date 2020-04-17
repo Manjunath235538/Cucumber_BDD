@@ -4,14 +4,15 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.vimalselvam.cucumber.listener.Reporter;
-
+import io.cucumber.core.api.Scenario;
 import pageObjects.DemoPageObjects;
 import utilities.GetScreenShot;
 
@@ -49,7 +50,7 @@ public class DemoActions {
 		System.out.println(count);
 		Actions act=new Actions(driver);
 		act.moveToElement(driver.findElement(By.xpath("//nav[@class='navigation']/ul/li[2]/ul/li["+(count)+"]"))).build().perform();
-	    Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
+	   // Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 		clickL2Menu(count, l2menu);
 	}
 	
@@ -65,5 +66,9 @@ public class DemoActions {
 				break;
 			}
 		}	
+	}
+	public void captureSS(Scenario scenario) {
+		 byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+		 scenario.embed(screenshot, "image/png");
 	}
 }

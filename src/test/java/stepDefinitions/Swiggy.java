@@ -119,8 +119,11 @@ public class Swiggy {
 
 	@Then("^I add (\\d+) (.*) to the cart$")
 	public void iAddItemsToCart(int quatity, String item) {
+		System.out.println("quantity"+quatity);
+		System.out.println("itemName"+item);
 		this.restaurant.addItems(item, quatity);
 		items.put(item, quatity);
+		System.out.println("All items"+items);
 	}
 
 	@When("^I click on checkout$")

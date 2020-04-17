@@ -12,7 +12,7 @@ Feature: Swiggy Automation
     Then I select the Restaurant as <Restaurant>
     Then I select outlet as <Outlet> if displayed
     Then I should land on the <Restaurant> page
-    Then I add 2 Smoodies Groovy Guava to the cart
+    Then I add 2 Smoodies Bold Berries to the cart
     And I add 2 Smoodies Mighty Mango to the cart
     And I add 1 Smoodies Jhakaas Jamun to the cart
     And I add 1 Smoodies Peppy Peach to the cart
@@ -26,7 +26,7 @@ Feature: Swiggy Automation
     And I click on the Have a referral code?
     When I click on the CONTINUE
     Then I should see an error message displayed as <Error Message> and I capture the screenshot
-    Then I change the Smoodies Groovy Guava quantity to 1
+    Then I change the Smoodies Bold Berries quantity to 1
     Then I capture the screenshot
     And I close the browser
 

@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 public class Browser {
@@ -34,6 +35,16 @@ public class Browser {
 				driver = new FirefoxDriver(binary, profile);*/
 
 				driver = new FirefoxDriver();
+				driver.manage().window().maximize();
+				break;
+			case "ie":
+				WebDriverManager.iedriver().setup();
+
+				/*FirefoxBinary binary = new FirefoxBinary(new File("C:\\Users\\sm3\\AppData\\Local\\Mozilla Firefox\\firefox.exe"));
+				FirefoxProfile profile = new FirefoxProfile();
+				driver = new FirefoxDriver(binary, profile);*/
+
+				driver = new InternetExplorerDriver();
 				driver.manage().window().maximize();
 				break;
 			case "safari":

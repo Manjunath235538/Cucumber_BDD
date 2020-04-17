@@ -48,6 +48,9 @@ public class LeonGrill implements Restaurant {
 		
 		@FindBy(xpath = "//span[text()='Add Item']")
 		private List<WebElement> customizePopUpAddItem;
+		
+//		@FindBy(xpath = "//span[text()='Add Item']")
+//		private WebElement customizePopUpAddItem;
 
 		/**
 		 * Below method is to validate Bite Me Restaurant Page title
@@ -70,6 +73,7 @@ public class LeonGrill implements Restaurant {
 		 */
 		public void addItems(String beverage, int quantity) {
 			helper.waitForElementVisibility(this.allBeverages, 8);
+			//helper.waitFor(1);
 			for(int i=0;i<this.allBeverages.size();i++) {
 				if(this.allBeverages.get(i).getText().trim().equalsIgnoreCase(beverage) || beverage.contains(this.allBeverages.get(i).getText().trim())) {
 					logger.info("=> Desert '"+beverage+"' is there...");
@@ -83,6 +87,8 @@ public class LeonGrill implements Restaurant {
 								WebElement ele = this.addMoreBeverages.get(i);
 								helper.waitForElementVisibility(ele, 5);
 								ele.click();
+//								helper.waitForElementVisibility(customizePopUpAddItem, 5);
+//								this.customizePopUpAddItem.click();
 								if(this.customizePopUpAddItem.size() > 0) {
 									this.customizePopUpAddItem.get(0).click();
 								}

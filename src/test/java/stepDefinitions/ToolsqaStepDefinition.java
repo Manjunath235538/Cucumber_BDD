@@ -3,6 +3,8 @@ package stepDefinitions;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.junit.Assert;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -20,6 +22,7 @@ import actions.DemoActions;
 import actions.WpmobilePackActions;
 
 import helpers.Environment;
+import helpers.Logs;
 import helpers.SharedDriver;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
@@ -35,6 +38,7 @@ import utilities.GetScreenShot;
 public class ToolsqaStepDefinition {
 
 	public static final String BROWSER="Chrome"; //values Chrome,FireFox,IE
+	private final String screenshotRequiredFlag="YES";//vales yes or no	
 	public static String env="ToolsQA";
 	public static WebDriver driver;
 	static String scenarioName;
@@ -47,20 +51,26 @@ public class ToolsqaStepDefinition {
 	WebDriverWait wait;
 	Environment environment;
 	AllureReports alrep;
+	private Scenario scenario;
+	private Logger log;
 
 	@Before
 	public void browserLaunch(Scenario scenario) throws Exception {	
 
 		System.out.println("Before scenario------------------excecuted");
-		shdriver = new SharedDriver(BROWSER);
+		PropertyConfigurator.configure(System.getProperty("user.dir")+File.separator+"log4j.properties");
+	    log=Logger.getLogger(ToolsqaStepDefinition.class.getName());
+		this.scenario=scenario;
+		shdriver = new SharedDriver(BROWSER,log);
 		driver = shdriver.getDriver();
 		System.out.println("printing driver "+driver);
 		screenshot = new GetScreenShot();
 		scenarioName=scenario.getName();
 		environment=new Environment(env);
 		wait=new WebDriverWait(driver, 20);
-
-		demoA = new DemoActions(driver);
+		
+		
+		demoA = new DemoActions(driver,log);
 		wpAction=new WpmobilePackActions(driver);
 		alrep=new AllureReports(driver);
 		demoPO=new DemoPageObjects();
@@ -74,7 +84,10 @@ public class ToolsqaStepDefinition {
 	public void i_aunthorized_user_able_to_access_toolsqa_site() throws Throwable {
 		driver.get(environment.getURL());
 		wait.until(ExpectedConditions.visibilityOf(demoPO.tutorial));
-		alrep.saveScreenshot();
+		alrep.takeScreenshot(screenshotRequiredFlag, scenario);
+		log.info("=> Accessed URL successfully");
+		 //scenario.embed(alrep.getScreenshot(), "image/png");
+		//alrep.saveScreenshot();
 		//demoA.captureSS(scenario);
 		//Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 		
@@ -84,7 +97,10 @@ public class ToolsqaStepDefinition {
 	public void im_at_home_page_and_navigate_to_tutorials_menu() throws Throwable {
 		Actions act=new Actions(driver);
 		act.moveToElement(demoPO.tutorial).build().perform();
-		alrep.saveScreenshot();
+		alrep.takeScreenshot(screenshotRequiredFlag, scenario);
+		log.info("=> Navigated to home page");
+		// scenario.embed(alrep.getScreenshot(), "image/png");
+		//alrep.saveScreenshot();
 		//demoA.captureSS(scenario);
 		//Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 	}
@@ -98,7 +114,10 @@ public class ToolsqaStepDefinition {
 		//assert.assertEquals("Cucumber Tutorial", demoPO.cucumberTxt.getText());
 		Assert.assertTrue("Cucumber Tutorial".trim().equals(demoPO.cucumberTxt.getText().trim()));
 		//assert.assertTrue("Cucumber Tutorial".trim().equals(demoPO.cucumberTxt.getText().trim());
-		alrep.saveScreenshot();
+		// scenario.embed(alrep.getScreenshot(), "image/png","This is for passed test case");
+		alrep.takeScreenshot(screenshotRequiredFlag, scenario);
+		log.info("=> Navigated to cucumber screen new one");
+	//	alrep.saveScreenshot();
 		//Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 	}
 	
@@ -128,7 +147,7 @@ public class ToolsqaStepDefinition {
 	            byte[] screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 	            scenario.embed(screenshot, "image/png");
 	            scenario.write("Failed test scenario");
-	        // Reporter.addScreenCaptureFromPath(screenshot.getAbsolutePath());
+	       
 	        }
 	      }
 }

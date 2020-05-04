@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 		
 		features= {"src/test/resources/features"},
 		glue={"stepDefinitions"},
-		//tags= {"@SampleFeature_Toolsqa"},
+		tags= {"@SampleFeature_Toolsqa"},
 		monochrome=true,
 		//plugin  = {"pretty", "html:target/Destination","json:target/Destination/Cucumber.json","junit:target/Destination/Cucumber.xml"},
 		plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:","io.qameta.allure.cucumber4jvm.AllureCucumber4Jvm","pretty", "html:target/Destination","json:target/Destination/Cucumber.json","junit:target/Destination/Cucumber.xml"}

@@ -3,6 +3,7 @@ package actions;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -22,10 +23,12 @@ public class DemoActions {
 	WebDriverWait wait;
 	DemoPageObjects demoPO;
 	GetScreenShot screenshot;
+	private Logger log;
 	
-	public DemoActions(WebDriver driver){
+	public DemoActions(WebDriver driver,Logger log){
 		
 		this.driver=driver;
+		this.log=log;
 		wait=new WebDriverWait(driver, 60);
 		screenshot = new GetScreenShot();
 		demoPO=PageFactory.initElements(driver, DemoPageObjects.class);	

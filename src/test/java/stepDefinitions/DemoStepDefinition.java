@@ -1,7 +1,10 @@
 package stepDefinitions;
 
+import java.io.File;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
@@ -40,18 +43,21 @@ public class DemoStepDefinition {
 	SharedDriver shdriver;
 	WebDriverWait wait;
 	Environment environment;
+	private Logger log;
 
 	@Before
 	public void browserLaunch(Scenario scenario) throws Exception {	
 		System.out.println("Before scenario------------------excecuted");
-		shdriver = new SharedDriver(BROWSER);
+		PropertyConfigurator.configure(System.getProperty("user.dir")+File.separator+"log4j.properties");
+	    log=Logger.getLogger(ToolsqaStepDefinition.class.getName());
+		shdriver = new SharedDriver(BROWSER,log);
 		driver = shdriver.getDriver();
 		System.out.println(driver);
 		screenshot = new GetScreenShot();
 		scenarioName=scenario.getName();
 		environment=new Environment(env);
 		wait=new WebDriverWait(driver, 20);
-		demoA = new DemoActions(driver);
+		demoA = new DemoActions(driver,log);
 		wpAction=new WpmobilePackActions(driver);
 		areport=new AllureReports(driver);
 		demoPO=new DemoPageObjects();

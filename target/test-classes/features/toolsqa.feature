@@ -1,3 +1,7 @@
+@FeatureTag
+@tmsLink=OAT-4444
+@flaky
+@issue=BUG-22400
 @SampleFeature_Toolsqa
 Feature: showcasing BDD framework using Toolsqa site
 

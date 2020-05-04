@@ -58,7 +58,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Apr 16, 2020 12:26:17 PM</span>
+                    <span class="badge badge-primary">May 4, 2020 09:11:04 PM</span>
                 </a>
             </li>
         </ul>
@@ -80,14 +80,6 @@
             <i class="fa fa-tag"></i>
           </span>
           <span class="title">Tags</span>
-        </a>
-      </li>
-      <li class="nav-item dropdown">
-        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
-          <span class="icon-holder">
-            <i class="fa fa-bug"></i>
-          </span>
-          <span class="title">Exception</span>
         </a>
       </li>
       <li class="nav-item dropdown">
@@ -120,11 +112,11 @@
                                         </a>
                                         <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
                                             <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
-	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 	                                        
 	                                        
 	                                        
-	                                        <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning pull-right"></span></a>
+	                                        
+	                                        
 	                                        <div class="dropdown-divider"></div>
                                             <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
                                         </ul>
@@ -134,15 +126,14 @@
                                             <i class="fa fa-tag"></i>
                                         </a>
                                         <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+                                                <a class="dropdown-item" href="#">@FeatureTag</a>
+                                                <a class="dropdown-item" href="#">@tmsLink=OAT-4444</a>
+                                                <a class="dropdown-item" href="#">@flaky</a>
+                                                <a class="dropdown-item" href="#">@issue=BUG-22400</a>
                                                 <a class="dropdown-item" href="#">@SampleFeature_Toolsqa</a>
                                                 <a class="dropdown-item" href="#">@Access_Cucumber_tutorial</a>
                                                 <a class="dropdown-item" href="#">@sample</a>
                                                 <a class="dropdown-item" href="#">@severity=blocker</a>
-                                                <a class="dropdown-item" href="#">@issue=666</a>
-                                                <a class="dropdown-item" href="#">@tmsLink=123</a>
-                                                <a class="dropdown-item" href="#">@SampleFeature_wpmobile</a>
-                                                <a class="dropdown-item" href="#">@PlaceOrder</a>
-                                                <a class="dropdown-item" href="#">@PlaceOrder_MultipleTimes</a>
                                         </ul>
                                     </li>
                                 </ul>
@@ -151,7 +142,7 @@
                                 <ul class="test-list-item">
                                     <li class="test-item"  status="pass" test-id="1"
                                             author=""
-                                            tag="@SampleFeature_Toolsqa"
+                                            tag="@FeatureTag @tmsLink=OAT-4444 @flaky @issue=BUG-22400 @SampleFeature_Toolsqa"
                                             device="">
                                         <div class="status-avatar pass-bg">
                                             <i class="fa fa-check text-white"></i>
@@ -159,8 +150,8 @@
                                         <div class="open-test">
                                             <div class="test-detail"> 
                                                 <p class="name">showcasing BDD framework using Toolsqa site</p> 
-                                                <p class="duration text-sm">0h 0m 21s+728ms</p> 
-                                                <span class="datetime">12:26:17 PM</span>
+                                                <p class="duration text-sm">0h 0m 14s+984ms</p> 
+                                                <span class="datetime">21:11:04 PM</span>
                                             </div>
                                         </div>
                                         <div class="test-contents d-none">
@@ -168,11 +159,15 @@
                                                 <div class="p-v-10 d-inline-block"> 
                                                     <div class="info">
                                                         <h5 class="test-status text-pass">showcasing BDD framework using Toolsqa site</h5>
-                                                        <span class='badge badge-success'>04.16.2020 12:26:17</span>
-                                                        <span class='badge badge-danger'>04.16.2020 12:26:39</span>
-                                                        <span class='badge badge-default'>0h 0m 21s+728ms</span>
+                                                        <span class='badge badge-success'>05.04.2020 21:11:04</span>
+                                                        <span class='badge badge-danger'>05.04.2020 21:11:19</span>
+                                                        <span class='badge badge-default'>0h 0m 14s+984ms</span>
                                                     </div>
                                                     <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @FeatureTag</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @tmsLink=OAT-4444</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @flaky</span>
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @issue=BUG-22400</span>
 			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @SampleFeature_Toolsqa</span>
                                                     </div>
                                                     <div class="m-t-10 m-l-5">
@@ -214,6 +209,7 @@
 								<span>Given i aunthorized user able to access toolsqa site</span>
 							</div>
 				<div class="details"></div>
+				<span class="badge badge-primary"><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded1.png' src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded1.png' data-src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded1.png'></span>
 							<div class="d-flex align-items-center justify-content-start when" title="ToolsqaStepDefinition.im_at_home_page_and_navigate_to_tutorials_menu()">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -221,6 +217,7 @@
 								<span>When im at home page and navigate to tutorials menu</span>
 							</div>
 				<div class="details"></div>
+				<span class="badge badge-primary"><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded2.png' src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded2.png' data-src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded2.png'></span>
 							<div class="d-flex align-items-center justify-content-start then" title="ToolsqaStepDefinition.navigate_to_menu_followed_by(String,String)">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -228,6 +225,7 @@
 								<span>Then navigate to "Frameworks & Libraries" menu followed by "Cucumber"</span>
 							</div>
 				<div class="details"></div>
+				<span class="badge badge-primary"><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded3.png' src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded3.png' data-src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded3.png'></span>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
 								<span class="alert-icon pass-bg">
 									<i class="fa fa-check text-white"></i>
@@ -292,358 +290,6 @@
 							</div>
 				<div class="details"></div>
 					</div>
-				</div>
-	</div>
-</div>
-                                        </div>
-                                    </li>
-                                    <li class="test-item"  status="fail" test-id="16"
-                                            author=""
-                                            tag="@SampleFeature_wpmobile"
-                                            device="">
-                                        <div class="status-avatar fail-bg">
-                                            <i class="fa fa-times text-white"></i>
-                                        </div>
-                                        <div class="open-test">
-                                            <div class="test-detail"> 
-                                                <p class="name">showcasing BDD framework using wpmobile ecommerce site</p> 
-                                                <p class="duration text-sm">0h 0m 16s+605ms</p> 
-                                                <span class="datetime">12:26:39 PM</span>
-                                            </div>
-                                        </div>
-                                        <div class="test-contents d-none">
-                                            <div class="detail-head">
-                                                <div class="p-v-10 d-inline-block"> 
-                                                    <div class="info">
-                                                        <h5 class="test-status text-fail">showcasing BDD framework using wpmobile ecommerce site</h5>
-                                                        <span class='badge badge-success'>04.16.2020 12:26:39</span>
-                                                        <span class='badge badge-danger'>04.16.2020 12:26:55</span>
-                                                        <span class='badge badge-default'>0h 0m 16s+605ms</span>
-                                                    </div>
-                                                    <div class="m-t-15">
-			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @SampleFeature_wpmobile</span>
-                                                    </div>
-                                                    <div class="m-t-10 m-l-5">
-                                                        
-                                                    </div>
-                                                </div>
-                                            </div>
-
-<div class="accordion mt-4">
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">To place an order from wpmobilePack</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>DemoStepDefinition.browserLaunch(Scenario)</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>ToolsqaStepDefinition.browserLaunch(Scenario)</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start given" title="DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given i have privileges to access wpmobilePack site</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="DemoStepDefinition.i_select_product_from_home(String)">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>When i select product "Patient Ninja" from home</span>
-							</div>
-				<textarea disabled class="code-block">java.lang.NoClassDefFoundError: gherkin/formatter/Reporter
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
-	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
-	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
-	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
-	at ?.i select product "Patient Ninja" from home(file:src/test/resources/features/wpmobile.feature:7)
-Caused by: java.lang.ClassNotFoundException: gherkin.formatter.Reporter
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.defineClass1(Native Method)
-	at java.lang.ClassLoader.defineClass(Unknown Source)
-	at java.security.SecureClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.defineClass(Unknown Source)
-	at java.net.URLClassLoader.access$100(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.net.URLClassLoader$1.run(Unknown Source)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
-	at java.lang.ClassLoader.loadClass(Unknown Source)
-	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
-	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
-	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
-	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at cucumber.runtime.Utils$1.call(Utils.java:26)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:20)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
-	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
-	at cucumber.runner.TestStep.executeStep(TestStep.java:65)
-	at cucumber.runner.TestStep.run(TestStep.java:50)
-	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
-	at cucumber.runner.TestCase.run(TestCase.java:46)
-	at cucumber.runner.Runner.runPickle(Runner.java:50)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:41)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:542)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:770)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-</textarea>
-							<div class="d-flex align-items-center justify-content-start and" title="DemoStepDefinition.add_the_selected_product_to_cart(String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>And add the selected product to cart "Patient Ninja was added to your shopping cart"</span>
-							</div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start then" title="DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData>)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>Then go to checkout page , fill the required fields and place the order</span>
-							</div>
-				<div class="details"><table class='runtime-table table-striped table'><tr><td>itemName</td><td>firstName</td><td>lastName</td><td>companyName</td><td>country</td><td>address1</td><td>address2</td><td>city</td><td>state</td><td>zip</td><td>phoneNumber</td><td>email</td></tr><tr><td>Patient Ninja</td><td>Handy</td><td>David</td><td>HP</td><td>United States (US)</td><td>street 1</td><td>street 2</td><td>ohio</td><td>Missouri</td><td>43210</td><td>987654321</td><td>mail@gmail.com</td></tr></table></div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start then" title="DemoStepDefinition.order_has_been_successfully_placed(String)">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>Then order has been successfully placed "Order received"</span>
-							</div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>ToolsqaStepDefinition.afterScenario(Scenario)</span>
-							</div>
-				<div class="details"></div>
-				<span class="badge badge-primary"><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded1.png' src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded1.png' data-src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded1.png'></span>
-				<div class="details">Failed test scenario</div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<h5 class="card-title pl-3">
-				<div class="node">To place an order from wpmobilePack for MultipleTimes</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
-			</h5>
-		</div>
-				<div class="collapse scenario_outline">
-						<div class="card-body l1">
-							<div class="card-header" role="tab">
-								<h5 class="card-title outline-child">
-									<div class="node">To place an order from wpmobilePack for MultipleTimes</div>
-									<div class="status-avatar float-left fail-bg">
-										<i class="fa fa-times text-white"></i>
-									</div>
-								</h5>
-							</div>
-							<div class="card-body collapse mt-3">
-									<div class="d-flex align-items-center justify-content-start asterisk" title="">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>DemoStepDefinition.browserLaunch(Scenario)</span>
-									</div>
-				<div class="details"></div>
-									<div class="d-flex align-items-center justify-content-start asterisk" title="">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>ToolsqaStepDefinition.browserLaunch(Scenario)</span>
-									</div>
-				<div class="details"></div>
-									<div class="d-flex align-items-center justify-content-start given" title="DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>Given i have privileges to access wpmobilePack site</span>
-									</div>
-				<div class="details"></div>
-									<div class="d-flex align-items-center justify-content-start when" title="DemoStepDefinition.i_select_product_from_home(String)">
-										<span class="alert-icon fail-bg">
-											<i class="fa fa-times text-white"></i>
-										</span>
-										<span>When i select product "Happy Ninja" from home</span>
-									</div>
-				<textarea disabled class="code-block">java.lang.NoClassDefFoundError: com/vimalselvam/cucumber/listener/ExtentCucumberFormatter
-	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
-	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
-	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
-	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
-	at ?.i select product "Happy Ninja" from home(file:src/test/resources/features/wpmobile.feature:17)
-</textarea>
-									<div class="d-flex align-items-center justify-content-start and" title="DemoStepDefinition.add_the_selected_product_to_cart(String)">
-										<span class="alert-icon skip-bg">
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</span>
-										<span>And add the selected product to cart "Happy Ninja was added to your shopping cart"</span>
-									</div>
-				<div class="details">Step skipped</div>
-									<div class="d-flex align-items-center justify-content-start then" title="DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData>)">
-										<span class="alert-icon skip-bg">
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</span>
-										<span>Then go to checkout page , fill the required fields and place the order</span>
-									</div>
-				<div class="details"><table class='runtime-table table-striped table'><tr><td>itemName</td><td>firstName</td><td>lastName</td><td>companyName</td><td>country</td><td>address1</td><td>address2</td><td>city</td><td>state</td><td>zip</td><td>phoneNumber</td><td>email</td></tr><tr><td>Patient Ninja</td><td>Handy</td><td>David</td><td>HP</td><td>United States (US)</td><td>street 1</td><td>street 2</td><td>ohio</td><td>Missouri</td><td>43210</td><td>987654321</td><td>mail@gmail.com</td></tr></table></div>
-				<div class="details">Step skipped</div>
-									<div class="d-flex align-items-center justify-content-start then" title="DemoStepDefinition.order_has_been_successfully_placed(String)">
-										<span class="alert-icon skip-bg">
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</span>
-										<span>Then order has been successfully placed "Order received"</span>
-									</div>
-				<div class="details">Step skipped</div>
-									<div class="d-flex align-items-center justify-content-start asterisk" title="">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>ToolsqaStepDefinition.afterScenario(Scenario)</span>
-									</div>
-				<div class="details"></div>
-				<span class="badge badge-primary"><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded2.png' src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded2.png' data-src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded2.png'></span>
-				<div class="details">Failed test scenario</div>
-							</div>
-						</div>
-						<div class="card-body l1">
-							<div class="card-header" role="tab">
-								<h5 class="card-title outline-child">
-									<div class="node">To place an order from wpmobilePack for MultipleTimes</div>
-									<div class="status-avatar float-left fail-bg">
-										<i class="fa fa-times text-white"></i>
-									</div>
-								</h5>
-							</div>
-							<div class="card-body collapse mt-3">
-									<div class="d-flex align-items-center justify-content-start asterisk" title="">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>DemoStepDefinition.browserLaunch(Scenario)</span>
-									</div>
-				<div class="details"></div>
-									<div class="d-flex align-items-center justify-content-start asterisk" title="">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>ToolsqaStepDefinition.browserLaunch(Scenario)</span>
-									</div>
-				<div class="details"></div>
-									<div class="d-flex align-items-center justify-content-start given" title="DemoStepDefinition.i_have_privileges_to_access_wpmobilePack_site()">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>Given i have privileges to access wpmobilePack site</span>
-									</div>
-				<div class="details"></div>
-									<div class="d-flex align-items-center justify-content-start when" title="DemoStepDefinition.i_select_product_from_home(String)">
-										<span class="alert-icon fail-bg">
-											<i class="fa fa-times text-white"></i>
-										</span>
-										<span>When i select product "Premium Quality" from home</span>
-									</div>
-				<textarea disabled class="code-block">java.lang.NoClassDefFoundError: com/vimalselvam/cucumber/listener/ExtentCucumberFormatter
-	at com.vimalselvam.cucumber.listener.Reporter.getCurrentStep(Reporter.java:162)
-	at com.vimalselvam.cucumber.listener.Reporter.addScreenCaptureFromPath(Reporter.java:94)
-	at actions.WpmobilePackActions.selectProduct(WpmobilePackActions.java:118)
-	at stepDefinitions.DemoStepDefinition.i_select_product_from_home(DemoStepDefinition.java:72)
-	at ?.i select product "Premium Quality" from home(file:src/test/resources/features/wpmobile.feature:17)
-</textarea>
-									<div class="d-flex align-items-center justify-content-start and" title="DemoStepDefinition.add_the_selected_product_to_cart(String)">
-										<span class="alert-icon skip-bg">
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</span>
-										<span>And add the selected product to cart "Premium Quality was added to your shopping cart"</span>
-									</div>
-				<div class="details">Step skipped</div>
-									<div class="d-flex align-items-center justify-content-start then" title="DemoStepDefinition.go_to_checkout_page_fill_the_required_fields_and_place_the_order(FeatureData>)">
-										<span class="alert-icon skip-bg">
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</span>
-										<span>Then go to checkout page , fill the required fields and place the order</span>
-									</div>
-				<div class="details"><table class='runtime-table table-striped table'><tr><td>itemName</td><td>firstName</td><td>lastName</td><td>companyName</td><td>country</td><td>address1</td><td>address2</td><td>city</td><td>state</td><td>zip</td><td>phoneNumber</td><td>email</td></tr><tr><td>Patient Ninja</td><td>Handy</td><td>David</td><td>HP</td><td>United States (US)</td><td>street 1</td><td>street 2</td><td>ohio</td><td>Missouri</td><td>43210</td><td>987654321</td><td>mail@gmail.com</td></tr></table></div>
-				<div class="details">Step skipped</div>
-									<div class="d-flex align-items-center justify-content-start then" title="DemoStepDefinition.order_has_been_successfully_placed(String)">
-										<span class="alert-icon skip-bg">
-											<i class="fa fa-long-arrow-right text-white"></i>
-										</span>
-										<span>Then order has been successfully placed "Order received"</span>
-									</div>
-				<div class="details">Step skipped</div>
-									<div class="d-flex align-items-center justify-content-start asterisk" title="">
-										<span class="alert-icon pass-bg">
-											<i class="fa fa-check text-white"></i>
-										</span>
-										<span>ToolsqaStepDefinition.afterScenario(Scenario)</span>
-									</div>
-				<div class="details"></div>
-				<span class="badge badge-primary"><img class='r-img' onerror='this.style.display="none"' data-featherlight='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded3.png' src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded3.png' data-src='C:\Users\manjunathgu\Cucumber_Git\Cucumber_BDD\output\screenshots\embedded3.png'></span>
-				<div class="details">Failed test scenario</div>
-							</div>
-						</div>
 				</div>
 	</div>
 </div>

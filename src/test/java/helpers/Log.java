@@ -1,12 +1,14 @@
 package helpers;
 
+import java.io.File;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
 public class Log {
 
 	static Logger Log = Logger.getLogger(helpers.Log.class);
-	static String log4jConfPath = System.getProperty("user.dir")+"\\src\\test\\resources\\files\\log4j.properties";
+	static String log4jConfPath = System.getProperty("user.dir")+File.separator+"log4j.properties";
 
 
 	public static void startTestCase(String sTestCaseName){

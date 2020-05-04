@@ -1,5 +1,6 @@
 package helpers;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
 import java.io.IOException;
@@ -10,7 +11,7 @@ public class SharedDriver {
 	
 	private static WebDriver REAL_DRIVER;
 	private static boolean initialized = false;
-
+	private static Logger log;
 	Date date=new Date();
 	
     static {
@@ -20,9 +21,10 @@ public class SharedDriver {
 				try {
 				  	REAL_DRIVER.close();
 		            REAL_DRIVER.quit();
-					Log.info("Driver is closed");
+		            log.info("Driver is closed");
+					
 				} catch (Exception e) {
-					Log.error("Driver is closed in Exception , Driver Instance :" + REAL_DRIVER + "Ex. Message:"
+					log.error("Driver is closed in Exception , Driver Instance :" + REAL_DRIVER + "Ex. Message:"
 							+ e.getMessage());
 				}
 			}
@@ -30,12 +32,12 @@ public class SharedDriver {
 
     }
 
-    public SharedDriver(String browser) throws IOException {
-
+    public SharedDriver(String browser,Logger log) throws IOException {
+    	this.log=log;
     	if(!initialized){
 
-    		Log.info("*********************Test Excecution Started on "+date+"************************");
-    		Log.info("Inside shared driver init.....");
+    		log.info("*********************Test Excecution Started on "+date+"************************");
+    		log.info("Inside shared driver init.....");
     		REAL_DRIVER = BrowserSelect.setup(browser);
     		REAL_DRIVER.manage().deleteAllCookies();
         	REAL_DRIVER.manage().window().maximize();

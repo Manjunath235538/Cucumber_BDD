@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="15.057678">
+<testcase classname="showcasing BDD framework using Toolsqa site" name="To access cucumber tutorial" time="15.032247">
+<system-out><![CDATA[Given i aunthorized user able to access toolsqa site........................passed
+When im at home page and navigate to tutorials menu.........................passed
+Then navigate to "Frameworks & Libraries" menu followed by "Cucumber".......passed
+]]></system-out>
+</testcase>
+<testcase classname="showcasing BDD framework using Toolsqa site" name="To verify allure reporting is  Working or not" time="0.025431">
+<system-out><![CDATA[Given I have a valid user...................................................passed
+When I login to app.........................................................passed
+Then homepage screen should be displayed....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

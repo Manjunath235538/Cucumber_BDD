@@ -28,9 +28,10 @@ import pageObjects.WpmobilePackPageObjects;
 import utilities.AllureReports;
 import utilities.GetScreenShot;
 
-public class DemoStepDefinition {
+public class WpmobileStepDefinition {
 
 	private static final String BROWSER="Chrome"; //values Chrome,FireFox,IE
+	private final String screenshotRequiredFlag="YES";//vales yes or no	
 	private static String env="WpMobile";
 	private static WebDriver driver;
 	private static String scenarioName;
@@ -39,17 +40,19 @@ public class DemoStepDefinition {
 	WpmobilePackPageObjects wpPO;
 	DemoActions demoA;
 	WpmobilePackActions wpAction;
-	AllureReports areport;
+    AllureReports alrep;;
 	SharedDriver shdriver;
 	WebDriverWait wait;
 	Environment environment;
 	private Logger log;
+	private Scenario scenario;
 
 	@Before
-	public void browserLaunch(Scenario scenario) throws Exception {	
+	public void initialSetup(Scenario scenario) throws Exception {	
 		System.out.println("Before scenario------------------excecuted");
 		PropertyConfigurator.configure(System.getProperty("user.dir")+File.separator+"log4j.properties");
-	    log=Logger.getLogger(ToolsqaStepDefinition.class.getName());
+	    log=Logger.getLogger(WpmobileStepDefinition.class.getName());
+	    this.scenario=scenario;
 		shdriver = new SharedDriver(BROWSER,log);
 		driver = shdriver.getDriver();
 		System.out.println(driver);
@@ -59,23 +62,26 @@ public class DemoStepDefinition {
 		wait=new WebDriverWait(driver, 20);
 		demoA = new DemoActions(driver,log);
 		wpAction=new WpmobilePackActions(driver);
-		areport=new AllureReports(driver);
+		alrep=new AllureReports(driver);
 		demoPO=new DemoPageObjects();
 		wpPO=new WpmobilePackPageObjects();
 		demoPO = PageFactory.initElements(driver, DemoPageObjects.class);
 		wpPO = PageFactory.initElements(driver, WpmobilePackPageObjects.class);
 	}
+	
 
 	@Given("^i have privileges to access wpmobilePack site$")
 	public void i_have_privileges_to_access_wpmobilePack_site() throws Throwable {
 		driver.get(environment.getURL());
 		wait.until(ExpectedConditions.visibilityOf(wpPO.homeGrid));
+		alrep.takeScreenshot(screenshotRequiredFlag, scenario);
+		log.info("=> Accessed URL successfully");
 		//Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 	}
 
 	@When("^i select product \"([^\"]*)\" from home$")
 	public void i_select_product_from_home(String product) throws Throwable {
-		wpAction.selectProduct(product, scenarioName);
+		wpAction.selectProduct(product, scenarioName,log);
 	}
 
 	@When("^add the selected product to cart \"([^\"]*)\"$")

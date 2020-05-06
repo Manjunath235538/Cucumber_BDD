@@ -22,6 +22,7 @@ import actions.DemoActions;
 import actions.WpmobilePackActions;
 
 import helpers.Environment;
+import helpers.FeatureData;
 import helpers.Logs;
 import helpers.SharedDriver;
 import io.cucumber.core.api.Scenario;
@@ -35,7 +36,7 @@ import pageObjects.WpmobilePackPageObjects;
 import utilities.AllureReports;
 import utilities.GetScreenShot;
 
-public class ToolsqaStepDefinition {
+public class ToolsQAStepDefinition {
 
 	public static final String BROWSER="Chrome"; //values Chrome,FireFox,IE
 	private final String screenshotRequiredFlag="YES";//vales yes or no	
@@ -55,11 +56,11 @@ public class ToolsqaStepDefinition {
 	private Logger log;
 
 	@Before
-	public void browserLaunch(Scenario scenario) throws Exception {	
+	public void initialSetup(Scenario scenario) throws Exception {	
 
 		System.out.println("Before scenario------------------excecuted");
 		PropertyConfigurator.configure(System.getProperty("user.dir")+File.separator+"log4j.properties");
-	    log=Logger.getLogger(ToolsqaStepDefinition.class.getName());
+	    log=Logger.getLogger(ToolsQAStepDefinition.class.getName());
 		this.scenario=scenario;
 		shdriver = new SharedDriver(BROWSER,log);
 		driver = shdriver.getDriver();
@@ -78,8 +79,10 @@ public class ToolsqaStepDefinition {
 
 		demoPO = PageFactory.initElements(driver, DemoPageObjects.class);
 		wpPO = PageFactory.initElements(driver, WpmobilePackPageObjects.class);
-
 	}
+	
+
+	
 	@Given("^i aunthorized user able to access toolsqa site$")
 	public void i_aunthorized_user_able_to_access_toolsqa_site() throws Throwable {
 		driver.get(environment.getURL());
@@ -139,6 +142,7 @@ public class ToolsqaStepDefinition {
 		System.out.println("Printing then");
 		
 	}
+	
 	
 	@After
 	public void afterScenario(Scenario scenario) throws IOException{

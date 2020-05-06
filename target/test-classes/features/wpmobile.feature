@@ -1,5 +1,5 @@
-@SampleFeature_wpmobile
-Feature: showcasing BDD framework using wpmobile ecommerce site
+@SampleFeature_WPmobile
+Feature: Wpmobile ecommerce site feature
 
   @PlaceOrder
   Scenario: To place an order from wpmobilePack

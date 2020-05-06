@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "showcasing BDD framework using Toolsqa site",
+    "children" : [ {
+      "name" : "To access cucumber tutorial",
+      "uid" : "ed7551ae26c14996",
+      "parentUid" : "5463328e0e1d93e9382c979a4cd278ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588745224773,
+        "stop" : 1588745244533,
+        "duration" : 19760
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "To verify allure reporting is  Working or not",
+      "uid" : "c16e1735a1f78c18",
+      "parentUid" : "5463328e0e1d93e9382c979a4cd278ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588745244650,
+        "stop" : 1588745244672,
+        "duration" : 22
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5463328e0e1d93e9382c979a4cd278ac"
+  } ]
+}

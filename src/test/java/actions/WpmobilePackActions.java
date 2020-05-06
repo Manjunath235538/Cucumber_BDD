@@ -3,6 +3,7 @@ package actions;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -112,9 +113,10 @@ public class WpmobilePackActions {
 		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 	}
 	
-	public void selectProduct(String product,String scenarioName) throws IOException, Exception {
+	public void selectProduct(String product,String scenarioName,Logger log) throws IOException, Exception {
 		shopClick(product);
 		wait.until(ExpectedConditions.visibilityOf(wpPO.addCartBtn));
+		log.info("=> Clicked on required product");
 		Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
 		Thread.sleep(1000);
 	}

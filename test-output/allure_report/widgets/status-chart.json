@@ -1,0 +1,21 @@
+[ {
+  "uid" : "c16e1735a1f78c18",
+  "name" : "To verify allure reporting is  Working or not",
+  "time" : {
+    "start" : 1588745244650,
+    "stop" : 1588745244672,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "ed7551ae26c14996",
+  "name" : "To access cucumber tutorial",
+  "time" : {
+    "start" : 1588745224773,
+    "stop" : 1588745244533,
+    "duration" : 19760
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

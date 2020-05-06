@@ -1,0 +1,182 @@
+{
+  "uid" : "c16e1735a1f78c18",
+  "name" : "To verify allure reporting is  Working or not",
+  "fullName" : "showcasing BDD framework using Toolsqa site: To verify allure reporting is  Working or not",
+  "historyId" : "36f9e9a128f1b07f1a0e492d4a6691f4",
+  "time" : {
+    "start" : 1588745244650,
+    "stop" : 1588745244672,
+    "duration" : 22
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "ToolsqaStepDefinition.browserLaunch(Scenario)",
+    "time" : {
+      "start" : 1588745244653,
+      "stop" : 1588745244658,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  }, {
+    "name" : "DemoStepDefinition.browserLaunch(Scenario)",
+    "time" : {
+      "start" : 1588745244659,
+      "stop" : 1588745244664,
+      "duration" : 5
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  I have a valid user",
+      "time" : {
+        "start" : 1588745244665,
+        "stop" : 1588745244666,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "When  I login to app",
+      "time" : {
+        "start" : 1588745244667,
+        "stop" : 1588745244668,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Then  homepage screen should be displayed",
+      "time" : {
+        "start" : 1588745244669,
+        "stop" : 1588745244670,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "ToolsqaStepDefinition.afterScenario(Scenario)",
+    "time" : {
+      "start" : 1588745244671,
+      "stop" : 1588745244671,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "FeatureTag"
+  }, {
+    "name" : "tag",
+    "value" : "SampleFeature_Toolsqa"
+  }, {
+    "name" : "tag",
+    "value" : "sample"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "host",
+    "value" : "ASBLP026"
+  }, {
+    "name" : "thread",
+    "value" : "1312@ASBLP026.main(1)"
+  }, {
+    "name" : "feature",
+    "value" : "showcasing BDD framework using Toolsqa site"
+  }, {
+    "name" : "story",
+    "value" : "To verify allure reporting is  Working or not"
+  }, {
+    "name" : "suite",
+    "value" : "showcasing BDD framework using Toolsqa site"
+  }, {
+    "name" : "testClass",
+    "value" : "To verify allure reporting is  Working or not"
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:src/test/resources/features/toolsqa.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.resources.features.toolsqa_feature.showcasing BDD framework using Toolsqa site"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "OAT-4444",
+    "url" : "https://example.org/browse/OAT-4444",
+    "type" : "tms"
+  }, {
+    "name" : "BUG-22400",
+    "url" : "https://example.org/browse/BUG-22400",
+    "type" : "issue"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "FeatureTag", "SampleFeature_Toolsqa", "sample" ]
+  },
+  "source" : "c16e1735a1f78c18.json",
+  "parameterValues" : [ ]
+}

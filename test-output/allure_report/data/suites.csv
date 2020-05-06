@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed May 06 11:37:24 IST 2020","Wed May 06 11:37:24 IST 2020","22","","showcasing BDD framework using Toolsqa site","","To verify allure reporting is  Working or not","","To verify allure reporting is  Working or not",""
+"passed","Wed May 06 11:37:04 IST 2020","Wed May 06 11:37:24 IST 2020","19760","","showcasing BDD framework using Toolsqa site","","To access cucumber tutorial","","To access cucumber tutorial",""

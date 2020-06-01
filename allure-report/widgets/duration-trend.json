@@ -1,0 +1,29 @@
+[ {
+  "buildOrder" : 10,
+  "reportUrl" : "http://localhost:8080/job/CucumberProject/10/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 26586
+  }
+}, {
+  "buildOrder" : 9,
+  "reportUrl" : "http://localhost:8080/job/CucumberProject/9/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 200103
+  }
+}, {
+  "buildOrder" : 8,
+  "reportUrl" : "http://localhost:8080/job/CucumberProject/8/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 31673
+  }
+}, {
+  "buildOrder" : 7,
+  "reportUrl" : "http://localhost:8080/job/CucumberProject/7/allure",
+  "reportName" : "AllureReport",
+  "data" : {
+    "duration" : 158580
+  }
+} ]

@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.vimalselvam.cucumber.listener.Reporter;
 
 import helpers.FeatureData;
-import pageObjects.DemoPageObjects;
+import pageObjects.ToolsQAPageObjects;
 import pageObjects.WpmobilePackPageObjects;
 import utilities.GetScreenShot;
 
@@ -26,7 +26,7 @@ public class WpmobilePackActions {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private WebElement element;
-	DemoPageObjects demoPO;
+	ToolsQAPageObjects demoPO;
 	GetScreenShot screenshot;
 	WpmobilePackPageObjects wpPO;
 	
@@ -35,7 +35,7 @@ public class WpmobilePackActions {
 		this.driver=driver;
 		wait=new WebDriverWait(driver, 60);
 		screenshot = new GetScreenShot();
-		demoPO=PageFactory.initElements(driver, DemoPageObjects.class);	
+		demoPO=PageFactory.initElements(driver, ToolsQAPageObjects.class);	
 		wpPO=PageFactory.initElements(driver, WpmobilePackPageObjects.class);	
 	}
 	

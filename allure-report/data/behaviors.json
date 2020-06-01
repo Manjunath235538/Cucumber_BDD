@@ -1,0 +1,94 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "ToolsQA Feature",
+    "children" : [ {
+      "name" : "To access cucumber tutorial page",
+      "children" : [ {
+        "name" : "To access cucumber tutorial page",
+        "uid" : "ec5823bf4c5331ac",
+        "parentUid" : "ba831d8cfb34ccc924c28821b98131e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589955496963,
+          "stop" : 1589955512715,
+          "duration" : 15752
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ba831d8cfb34ccc924c28821b98131e4"
+    }, {
+      "name" : "To verify allure reporting",
+      "children" : [ {
+        "name" : "To verify allure reporting",
+        "uid" : "43d27cf682920ef2",
+        "parentUid" : "b6d03ec38a547b694223484683df9d11",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589955512785,
+          "stop" : 1589955512800,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b6d03ec38a547b694223484683df9d11"
+    } ],
+    "uid" : "ff4530a20c8e64f1dadb9b4b5b0b9805"
+  }, {
+    "name" : "Wpmobile ecommerce site feature",
+    "children" : [ {
+      "name" : "To place an order from wpmobilePack",
+      "children" : [ {
+        "name" : "To place an order from wpmobilePack",
+        "uid" : "7038f4e45351ffb5",
+        "parentUid" : "660da3f3c990e5ee602884e3c386301b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589955512806,
+          "stop" : 1589955521457,
+          "duration" : 8651
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "660da3f3c990e5ee602884e3c386301b"
+    }, {
+      "name" : "To place an order from wpmobilePack for MultipleTimes",
+      "children" : [ {
+        "name" : "To place an order from wpmobilePack for MultipleTimes",
+        "uid" : "b679b74d7c6a3127",
+        "parentUid" : "d4051cabc12fc5880fe77f12a8486e75",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589955521466,
+          "stop" : 1589955522506,
+          "duration" : 1040
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Happy Ninja", "Happy Ninja was added to your shopping cart" ]
+      }, {
+        "name" : "To place an order from wpmobilePack for MultipleTimes",
+        "uid" : "d2f6939cbaf2d39e",
+        "parentUid" : "d4051cabc12fc5880fe77f12a8486e75",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589955522511,
+          "stop" : 1589955523549,
+          "duration" : 1038
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Premium Quality", "Premium Quality was added to your shopping cart" ]
+      } ],
+      "uid" : "d4051cabc12fc5880fe77f12a8486e75"
+    } ],
+    "uid" : "9d6003d05d764ace741e4f5f300f0a6d"
+  } ]
+}

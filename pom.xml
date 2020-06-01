@@ -61,17 +61,14 @@
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
+<!-- <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
             <version>4.0.9</version>
         </dependency>
 
-<dependency>
-        <groupId>com.vimalselvam</groupId>
-        <artifactId>cucumber-extentsreport</artifactId>
-        <version>3.1.1</version>
-    </dependency>
+<dependency> -->
+        
     
    <dependency>
     <groupId>com.aventstack</groupId>
@@ -121,12 +118,6 @@
     <version>1.1.1</version>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.apache.pdfbox/pdfbox -->
-<dependency>
-    <groupId>org.apache.pdfbox</groupId>
-    <artifactId>pdfbox</artifactId>
-    <version>2.0.16</version>
-</dependency>
 
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>

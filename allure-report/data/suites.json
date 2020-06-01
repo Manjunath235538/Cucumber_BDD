@@ -1,0 +1,78 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "ToolsQA Feature",
+    "children" : [ {
+      "name" : "To access cucumber tutorial page",
+      "uid" : "ec5823bf4c5331ac",
+      "parentUid" : "8c3960ed4b7721322f64ecdc53306ec0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589955496963,
+        "stop" : 1589955512715,
+        "duration" : 15752
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "To verify allure reporting",
+      "uid" : "43d27cf682920ef2",
+      "parentUid" : "8c3960ed4b7721322f64ecdc53306ec0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589955512785,
+        "stop" : 1589955512800,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8c3960ed4b7721322f64ecdc53306ec0"
+  }, {
+    "name" : "Wpmobile ecommerce site feature",
+    "children" : [ {
+      "name" : "To place an order from wpmobilePack",
+      "uid" : "7038f4e45351ffb5",
+      "parentUid" : "12ca5449eddb591f9b3e9dad4f10552c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589955512806,
+        "stop" : 1589955521457,
+        "duration" : 8651
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "To place an order from wpmobilePack for MultipleTimes",
+      "uid" : "b679b74d7c6a3127",
+      "parentUid" : "12ca5449eddb591f9b3e9dad4f10552c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589955521466,
+        "stop" : 1589955522506,
+        "duration" : 1040
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Happy Ninja", "Happy Ninja was added to your shopping cart" ]
+    }, {
+      "name" : "To place an order from wpmobilePack for MultipleTimes",
+      "uid" : "d2f6939cbaf2d39e",
+      "parentUid" : "12ca5449eddb591f9b3e9dad4f10552c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589955522511,
+        "stop" : 1589955523549,
+        "duration" : 1038
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Premium Quality", "Premium Quality was added to your shopping cart" ]
+    } ],
+    "uid" : "12ca5449eddb591f9b3e9dad4f10552c"
+  } ]
+}

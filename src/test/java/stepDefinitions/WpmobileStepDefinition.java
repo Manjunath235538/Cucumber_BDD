@@ -6,14 +6,12 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-import actions.DemoActions;
+import actions.ToolsQAActions;
 import actions.WpmobilePackActions;
 import helpers.Environment;
 import helpers.FeatureData;
@@ -23,7 +21,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import pageObjects.DemoPageObjects;
+import pageObjects.ToolsQAPageObjects;
 import pageObjects.WpmobilePackPageObjects;
 import utilities.AllureReports;
 import utilities.GetScreenShot;
@@ -36,9 +34,9 @@ public class WpmobileStepDefinition {
 	private static WebDriver driver;
 	private static String scenarioName;
 	GetScreenShot screenshot;
-	DemoPageObjects demoPO;
+	ToolsQAPageObjects demoPO;
 	WpmobilePackPageObjects wpPO;
-	DemoActions demoA;
+	ToolsQAActions demoA;
 	WpmobilePackActions wpAction;
     AllureReports alrep;;
 	SharedDriver shdriver;
@@ -60,12 +58,12 @@ public class WpmobileStepDefinition {
 		scenarioName=scenario.getName();
 		environment=new Environment(env);
 		wait=new WebDriverWait(driver, 20);
-		demoA = new DemoActions(driver,log);
+		demoA = new ToolsQAActions(driver,log);
 		wpAction=new WpmobilePackActions(driver);
 		alrep=new AllureReports(driver);
-		demoPO=new DemoPageObjects();
+		demoPO=new ToolsQAPageObjects();
 		wpPO=new WpmobilePackPageObjects();
-		demoPO = PageFactory.initElements(driver, DemoPageObjects.class);
+		demoPO = PageFactory.initElements(driver, ToolsQAPageObjects.class);
 		wpPO = PageFactory.initElements(driver, WpmobilePackPageObjects.class);
 	}
 	
@@ -76,7 +74,7 @@ public class WpmobileStepDefinition {
 		wait.until(ExpectedConditions.visibilityOf(wpPO.homeGrid));
 		alrep.takeScreenshot(screenshotRequiredFlag, scenario);
 		log.info("=> Accessed URL successfully");
-		//Reporter.addScreenCaptureFromPath(screenshot.capture(driver, scenarioName));
+		
 	}
 
 	@When("^i select product \"([^\"]*)\" from home$")

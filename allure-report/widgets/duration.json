@@ -1,0 +1,51 @@
+[ {
+  "uid" : "43d27cf682920ef2",
+  "name" : "To verify allure reporting",
+  "time" : {
+    "start" : 1589955512785,
+    "stop" : 1589955512800,
+    "duration" : 15
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7038f4e45351ffb5",
+  "name" : "To place an order from wpmobilePack",
+  "time" : {
+    "start" : 1589955512806,
+    "stop" : 1589955521457,
+    "duration" : 8651
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ec5823bf4c5331ac",
+  "name" : "To access cucumber tutorial page",
+  "time" : {
+    "start" : 1589955496963,
+    "stop" : 1589955512715,
+    "duration" : 15752
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "b679b74d7c6a3127",
+  "name" : "To place an order from wpmobilePack for MultipleTimes",
+  "time" : {
+    "start" : 1589955521466,
+    "stop" : 1589955522506,
+    "duration" : 1040
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d2f6939cbaf2d39e",
+  "name" : "To place an order from wpmobilePack for MultipleTimes",
+  "time" : {
+    "start" : 1589955522511,
+    "stop" : 1589955523549,
+    "duration" : 1038
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

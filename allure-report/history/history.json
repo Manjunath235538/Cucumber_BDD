@@ -1,0 +1,213 @@
+{
+  "f51c2ec494c4a177bc06ec7c14bcfb8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "7038f4e45351ffb5",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/10/allure/#testresult/7038f4e45351ffb5",
+      "status" : "broken",
+      "statusDetails" : "gherkin/formatter/Reporter",
+      "time" : {
+        "start" : 1589955512806,
+        "stop" : 1589955521457,
+        "duration" : 8651
+      }
+    }, {
+      "uid" : "109232a2683bf014",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/9/allure/#testresult/109232a2683bf014",
+      "status" : "broken",
+      "statusDetails" : "gherkin/formatter/Reporter",
+      "time" : {
+        "start" : 1589953281959,
+        "stop" : 1589953307201,
+        "duration" : 25242
+      }
+    } ]
+  },
+  "86749419d628a9509a1868b62c44732b" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "9d930be93d2ba069",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/8/allure/#testresult/9d930be93d2ba069",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588672590468,
+        "stop" : 1588672621975,
+        "duration" : 31507
+      }
+    }, {
+      "uid" : "9b18eae2e246b05e",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/7/allure/#testresult/9b18eae2e246b05e",
+      "status" : "broken",
+      "statusDetails" : "timeout: Timed out receiving message from renderer: 10.000\n  (Session info: chrome=81.0.4044.129)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'ASBLP026', ip: '192.168.43.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.129, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Windows\\TEMP\\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:50383}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 607d63c17c4b1a67c704ff097fa81ec3",
+      "time" : {
+        "start" : 1588672118126,
+        "stop" : 1588672276569,
+        "duration" : 158443
+      }
+    } ]
+  },
+  "8f2585f41bb6366e1c6abc2e61d0bb28" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b679b74d7c6a3127",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/10/allure/#testresult/b679b74d7c6a3127",
+      "status" : "broken",
+      "statusDetails" : "com/vimalselvam/cucumber/listener/ExtentCucumberFormatter",
+      "time" : {
+        "start" : 1589955521466,
+        "stop" : 1589955522506,
+        "duration" : 1040
+      }
+    }, {
+      "uid" : "ecd87a8c867f6a70",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/9/allure/#testresult/ecd87a8c867f6a70",
+      "status" : "broken",
+      "statusDetails" : "com/vimalselvam/cucumber/listener/ExtentCucumberFormatter",
+      "time" : {
+        "start" : 1589953307212,
+        "stop" : 1589953308499,
+        "duration" : 1287
+      }
+    } ]
+  },
+  "fac5458d46b6d7b1a842bd105a38d329" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "43d27cf682920ef2",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/10/allure/#testresult/43d27cf682920ef2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589955512785,
+        "stop" : 1589955512800,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "2ff9d76bb92ce437",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/9/allure/#testresult/2ff9d76bb92ce437",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589953281937,
+        "stop" : 1589953281951,
+        "duration" : 14
+      }
+    } ]
+  },
+  "36f9e9a128f1b07f1a0e492d4a6691f4" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "88b6dc66238b1775",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/8/allure/#testresult/88b6dc66238b1775",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588672622120,
+        "stop" : 1588672622141,
+        "duration" : 21
+      }
+    }, {
+      "uid" : "95ff98327268cb30",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/7/allure/#testresult/95ff98327268cb30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588672276680,
+        "stop" : 1588672276706,
+        "duration" : 26
+      }
+    } ]
+  },
+  "1048b0df86fd1ab09ac5e40bfd21ce5" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "ec5823bf4c5331ac",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/10/allure/#testresult/ec5823bf4c5331ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589955496963,
+        "stop" : 1589955512715,
+        "duration" : 15752
+      }
+    }, {
+      "uid" : "43b4d60d913828c9",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/9/allure/#testresult/43b4d60d913828c9",
+      "status" : "broken",
+      "statusDetails" : "timeout: Timed out receiving message from renderer: 10.000\n  (Session info: chrome=81.0.4044.138)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'ASBLP026', ip: '192.168.43.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\\Windows\\TEMP\\scoped_dir9...}, goog:chromeOptions: {debuggerAddress: localhost:55846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 7aeb42eac66a59039d00f463584178a4",
+      "time" : {
+        "start" : 1589953110076,
+        "stop" : 1589953281809,
+        "duration" : 171733
+      }
+    } ]
+  },
+  "f6d2e72ab39b0594b646295a1d4ffe71" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "d2f6939cbaf2d39e",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/10/allure/#testresult/d2f6939cbaf2d39e",
+      "status" : "broken",
+      "statusDetails" : "com/vimalselvam/cucumber/listener/ExtentCucumberFormatter",
+      "time" : {
+        "start" : 1589955522511,
+        "stop" : 1589955523549,
+        "duration" : 1038
+      }
+    }, {
+      "uid" : "ff647ee5d39e406",
+      "reportUrl" : "http://localhost:8080/job/CucumberProject/9/allure/#testresult/ff647ee5d39e406",
+      "status" : "broken",
+      "statusDetails" : "com/vimalselvam/cucumber/listener/ExtentCucumberFormatter",
+      "time" : {
+        "start" : 1589953308509,
+        "stop" : 1589953310179,
+        "duration" : 1670
+      }
+    } ]
+  }
+}
